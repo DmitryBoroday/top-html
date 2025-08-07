@@ -494,6 +494,37 @@
        <p>Footer here</p>
      </footer>
 
+      <h1>Sanity test</h1>
+      <span id='loading'>Loading...</span>
+      <ul></ul>
+   
+     <!-- Sanity Fetch Popular Countries -->
+     <script>
+        const projectId = '2rmudr1y'
+        const dataset = 'production'
+        const apiVersion = '2025-01-01'
+        const groqQuery = encodeURIComponent(
+            '*[_type == "popularCountry"]'
+        ) 
+        const url = `https://${projectId}.api.sanity.io/${apiVersion}/data/query/${dataset}?query=${groqQuery}`
+
+        fetch(url)
+        .then((response)=> response.json())
+        .then(({ result}) =>{
+            let loading = document.getElementById('loading')
+            loading.parentNode.removeChild(loading)
+
+            let countries = document.querySelector('ul')
+            if (result.length > 0) {
+                result.forEach(country => {
+                    let item = document.createElement('li')
+                    item.textContent = `${country.popularCountryTitle}`
+                })
+            }
+        })
+
+     </script>
+
      <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
