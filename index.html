@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='description' content='Эскорт вакансии по странам. Лучшие эскорт агентства Европы, Азии, России, Австралии и США. Работа для девушек в эскорте за границей'>
     <title>Эскорт вакансии по странам от topescort</title>
-    <link rel='preconnect' href='https://fonts.googleapis.com'>
-    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-    <link href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap' rel='stylesheet'>
-    <link rel='icon' type='image/png' href='../assets/images/favicon.png'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel='icon' type='image/png' href='./favicon.png'>
     <link rel='stylesheet' href='/index.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <meta name="robots" content="index follow">
     <!-- Open Graph Meta Tags -->
     <meta property='og:title' content='My Awesome Page Title'>
@@ -22,8 +25,498 @@
     <link rel='canonical' href='https://www.topescort.pro/' />
     <link rel='apple-touch-icon' href='/apple-touch-icon.png'>
     <meta name='theme-color' content='#000000'>
+    <!-- Tailwind -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+     <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <h1>Эскорт вакансии по странам от topescort</h1>
+    <header>
+        <!-- Top Navbar -->
+        <nav>Navbar</nav>
+        <!-- Hero Title/Subtitle -->
+       <h1 class='heroTitle'>Эскорт вакансии по странам от <span class='heroSpan'>topescort</span></h1>
+       <h2 class='heroSubtitle'>Быстрый и удобный поиск вакансий от лучших эскорт агентств рядом с тобой и по всему миру</h2>
+       <a href='/locations.html' class='heroLink'><p>Найти вакансию</p><span class="material-symbols-outlined">
+        arrow_circle_right
+    </span></a>
+    </header>
+     <main>
+        <!-- First Video Banner Section-->
+       <section class='sectionOne'>
+            <video class='videoOne'
+                    loop autoPlay muted playsInline preload='auto' width='100%' height='100%'
+                    poster='../assets/videos/heroPoster.avif'>
+                    <source src='../assets/videos/heroMob.mp4' type='video/mp4' media='(max-width:480px)'>
+                    </source>
+                    <source src='../assets/videos/heroDesk.mp4' type='video/mp4'>
+                    </source>
+            </video>
+            <!-- Section Ava -->
+            <div class='sectionOneAva'>
+                    <img 
+                     title='Фото эскортницы'
+                     src='../assets/images/hero/sectionOneAva.avif'
+                     class='sectionOneAva'
+                     alt='Фото эскортницы'
+                     width={64}
+                     height={64}
+                     loading='eager'
+                     fetchPriority='high'
+                    />
+                    <p>
+                        Все
+                        <br /> вакансии
+                    </p>
+            </div>
+            <!-- Main Swiper -->
+            <div class='swiper mySwiper'>
+                <div class='swiper-wrapper'>
+                    <div  class='swiper-slide slide'>
+                        <a href='/about.html'>
+                          <img 
+                          title='Подробно про нашу платформу' 
+                          src='../assets/images/hero/secOneAbout.avif' 
+                          class='swiper-slide' 
+                          alt='Фото эскортницы'
+                          width={100%} 
+                          height={100%} 
+                          loading='eager' 
+                          fetchPriority='high' 
+                          />
+                        </a>
+                         <p class='slide-p'>О нас</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/hotDeals.html'>
+                            <img 
+                            title='Подробно про нашу платформу' 
+                            src='../assets/images/hero/secOneHot.avif' 
+                            class='swiper-slide'
+                            alt='Фото эскортницы' 
+                            width={100%} 
+                            height={100%} 
+                            loading='eager' 
+                            fetchPriority='high' 
+                            />
+                        </a>
+                        <p class='slide-p'>Горячие вакансии</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/popularCountries.html'>
+                            <img 
+                            title='Подробно про нашу платформу' 
+                            src='../assets/images/hero/secOnePop.avif'
+                            class='swiper-slide'
+                            alt='Фото эскортницы' 
+                            width={100%} 
+                            height={100%} 
+                            loading='eager' 
+                            fetchPriority='high' 
+                            />
+                        </a>
+                        <p class='slide-p'>Горячие вакансии</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/locations.html'>
+                            <img 
+                            title='Подробно про нашу платформу' 
+                            src='../assets/images/hero/secOneLoc.avif' 
+                            class='swiper-slide'
+                            alt='Фото эскортницы' 
+                            width={100%} 
+                            height={100%} 
+                            loading='eager' 
+                            fetchPriority='high'
+                             />
+                        </a>
+                        <p class='slide-p'>Весь мир</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/tours.html'>
+                            <img 
+                            title='Подробно про нашу платформу' 
+                            src='../assets/images/hero/secOneTours.avif' 
+                            class='swiper-slide'
+                            alt='Фото эскортницы' 
+                            width={100%} 
+                            height={100%} 
+                            loading='eager' 
+                            fetchPriority='high' 
+                            />
+                        </a>
+                        <p class='slide-p'>Прибыльные туры</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/newAgencies.html'>
+                            <img 
+                            title='Подробно про нашу платформу' 
+                            src='../assets/images/hero/secOneFresh.avif' 
+                            class='swiper-slide'
+                            alt='Фото эскортницы' 
+                            width={100%} 
+                            height={100%} 
+                            loading='eager' 
+                            fetchPriority='high'
+                             />
+                        </a>
+                        <p class='slide-p'>Новые агентства</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/blog.html'>
+                            <img 
+                            title='Подробно про нашу платформу' 
+                            src='../assets/images/hero/secOneBlog.avif' 
+                            class='swiper-slide'
+                            alt='Фото эскортницы' 
+                            width={100%} 
+                            height={100%} 
+                            loading='eager' 
+                            fetchPriority='high'
+                            />
+                        </a>
+                        <p class='slide-p'>Наш блог</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+          
+        <!-- Second Video Banner Section -->
+       <section class='sectionTwo'>
+         <div class='sectionTwoImg'>
+            <img 
+            src='../assets/images/hero/secTwoImage.avif'
+            class=''
+            alt='Фото успешной эскортницы' 
+            width={400} 
+            height={700} 
+            loading='eager' 
+            fetchPriority='high' 
+            />
+         </div>
+         <video 
+           class='videoTwo' 
+           loop
+           autoPlay 
+           muted 
+           playsInline 
+           preload='auto' 
+           width='100%' 
+           height='100%'
+           poster='../assets/videos/heroPosterTwo.avif'
+        >
+           <source src='../assets/videos/boatMob.mp4' type='video/mp4' media='(max-width:480px)'>
+           </source>
+           <source src='../assets/videos/boatDesk.mp4' type='video/mp4'>
+           </source>
+          </video>
+       </section>
+
+       <!-- Third Hot Deals Swiper Banner Section -->
+       <section class='sectionHot'>
+        <div class='sectionHotImg'>
+            <img 
+            src='../assets/images/hero/secThreeHot.avif' 
+            class='' 
+            alt='Фото успешной эскортницы' 
+            width={800} 
+            height={500}
+            loading='eager' 
+            fetchPriority='high'
+            />
+        </div>
+        <div class='swiper mySwiper hotSwiper'>
+            <div class='swiper-wrapper'>
+                <div class='swiper-slide slide'>
+                    <a href='/about.html'>
+                        <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneAbout.avif'
+                            class='hotSwiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                            fetchPriority='high' />
+                    </a>
+                    <p class='slide-p'>О нас</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href='/hotDeals.html'>
+                        <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneHot.avif' class='swiper-slide'
+                            alt='Фото эскортницы' width={100%} height={100%} loading='eager' fetchPriority='high' />
+                    </a>
+                    <p class='slide-p'>Горячие вакансии</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href='/popularCountries.html'>
+                        <img title='Подробно про нашу платформу' src='../assets/images/hero/secOnePop.avif' class='swiper-slide'
+                            alt='Фото эскортницы' width={100%} height={100%} loading='eager' fetchPriority='high' />
+                    </a>
+                    <p class='slide-p'>Горячие вакансии</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href='/locations.html'>
+                        <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneLoc.avif' class='swiper-slide'
+                            alt='Фото эскортницы' width={100%} height={100%} loading='eager' fetchPriority='high' />
+                    </a>
+                    <p class='slide-p'>Весь мир</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href='/tours.html'>
+                        <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneTours.avif'
+                            class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                            fetchPriority='high' />
+                    </a>
+                    <p class='slide-p'>Прибыльные туры</p>
+                </div>
+            </div>
+        </div>
+       </section> 
+      
+       <!-- Popular Section Banner Swiper -->
+       <section class='sectionPop'>
+        <div class='swiper mySwiper popSwiper'>
+            <div class='swiper-wrapper'>
+                <div class='swiper-slide slide'>
+                    <a href='/about.html'>
+                        <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneAbout.avif'
+                            class='hotSwiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                            fetchPriority='high' />
+                    </a>
+                    <p class='slide-p'>О нас</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href='/hotDeals.html'>
+                        <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneHot.avif'
+                            class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                            fetchPriority='high' />
+                    </a>
+                    <p class='slide-p'>Горячие вакансии</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href='/popularCountries.html'>
+                        <img title='Подробно про нашу платформу' src='../assets/images/hero/secOnePop.avif'
+                            class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                            fetchPriority='high' />
+                    </a>
+                    <p class='slide-p'>Горячие вакансии</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href='/locations.html'>
+                        <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneLoc.avif'
+                            class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                            fetchPriority='high' />
+                    </a>
+                    <p class='slide-p'>Весь мир</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href='/tours.html'>
+                        <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneTours.avif'
+                            class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                            fetchPriority='high' />
+                    </a>
+                    <p class='slide-p'>Прибыльные туры</p>
+                </div>
+            </div>
+        </div>
+        <div class='sectionPopImg'>
+            <img 
+            src='../assets/images/hero/secFourImage.avif' 
+            alt='Фото успешной эскортницы' 
+            width={800}
+            height={500}loading='eager' 
+            fetchPriority='high' 
+            />
+        </div>
+       </section>
+
+       <!-- Section Four Video Banner  -->
+        <section class='sectionTwo'>
+            <video class='videoTwo' loop autoPlay muted playsInline preload='auto' width='100%' height='100%'
+                poster='../assets/videos/luxuryPoster.avif'>
+                <source src='../assets/videos/luxuryMob.mp4' type='video/mp4' media='(max-width:480px)'>
+                </source>
+                <source src='../assets/videos/luxuryDesk.mp4' type='video/mp4'>
+                </source>
+            </video>
+            <div class='sectionTwoImg'>
+                <img 
+                src='../assets/images/hero/secFiveImage.avif'  
+                alt='Фото успешной эскортницы' 
+                width={400}
+                height={700} 
+                loading='eager' 
+                fetchPriority='high' 
+                />
+            </div>
+        </section>
+
+        <!-- Section Six New Agencies Banner Swiper -->
+        <section class='sectionNew'>
+            <div class='swiper mySwiper popSwiper'>
+                <div class='swiper-wrapper'>
+                    <div class='swiper-slide slide'>
+                        <a href='/about.html'>
+                            <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneAbout.avif'
+                                class='hotSwiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                                fetchPriority='high' />
+                        </a>
+                        <p class='slide-p'>О нас</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/hotDeals.html'>
+                            <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneHot.avif'
+                                class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                                fetchPriority='high' />
+                        </a>
+                        <p class='slide-p'>Горячие вакансии</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/popularCountries.html'>
+                            <img title='Подробно про нашу платформу' src='../assets/images/hero/secOnePop.avif'
+                                class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                                fetchPriority='high' />
+                        </a>
+                        <p class='slide-p'>Горячие вакансии</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/locations.html'>
+                            <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneLoc.avif'
+                                class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                                fetchPriority='high' />
+                        </a>
+                        <p class='slide-p'>Весь мир</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/tours.html'>
+                            <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneTours.avif'
+                                class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                                fetchPriority='high' />
+                        </a>
+                        <p class='slide-p'>Прибыльные туры</p>
+                    </div>
+                </div>
+            </div>
+            <div class='sectionPopImg'>
+              <img 
+                src='../assets/images/hero/secSixImage.avif' 
+                alt='Фото успешной эскортницы' 
+                width={800}
+                height={500}
+                loading='eager' 
+                fetchPriority='high' 
+               />
+            </div>
+        </section>
+
+        <!-- Section Seven Tours Banner Swiper -->
+        <section class='sectionTours'>
+            <div class='sectionHotImg'>
+                <img 
+                src='../assets/images/hero/secSevenImage.avif' 
+                alt='Фото успешной эскортницы' 
+                width={800}
+                height={500} 
+                loading='eager' 
+                fetchPriority='high' 
+                />
+            </div>
+            <div class='swiper mySwiper hotSwiper'>
+                <div class='swiper-wrapper'>
+                    <div class='swiper-slide slide'>
+                        <a href='/about.html'>
+                            <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneAbout.avif'
+                                class='hotSwiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                                fetchPriority='high' />
+                        </a>
+                        <p class='slide-p'>О нас</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/hotDeals.html'>
+                            <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneHot.avif'
+                                class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                                fetchPriority='high' />
+                        </a>
+                        <p class='slide-p'>Горячие вакансии</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/popularCountries.html'>
+                            <img title='Подробно про нашу платформу' src='../assets/images/hero/secOnePop.avif'
+                                class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                                fetchPriority='high' />
+                        </a>
+                        <p class='slide-p'>Горячие вакансии</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/locations.html'>
+                            <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneLoc.avif'
+                                class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                                fetchPriority='high' />
+                        </a>
+                        <p class='slide-p'>Весь мир</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href='/tours.html'>
+                            <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneTours.avif'
+                                class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
+                                fetchPriority='high' />
+                        </a>
+                        <p class='slide-p'>Прибыльные туры</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Eight Blog Banner -->
+        <section class='sectionBlog'>
+            <div class='sectionTwoImg'>
+                <img 
+                src='../assets/images/hero/secEightLeft.avif' 
+                alt='Фото успешной эскортницы' 
+                width={400} 
+                height={700}
+                loading='eager' 
+                fetchPriority='high' 
+                />
+            </div>
+            <div class='sectionHotImg'>
+                <img 
+                src='../assets/images/hero/secEightRight.avif' 
+                alt='Фото успешной эскортницы' 
+                width={400} 
+                height={700}
+                loading='eager' 
+                fetchPriority='high' 
+                />
+            </div>
+        </section>
+
+     </main>
+
+
+     <!-- Footer -->
+     <footer>
+       <p>Footer here</p>
+     </footer>
+
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+             breakpoints:{
+            320: {
+                spaceBetween: 16,
+                },
+            768: {
+                spaceBetween: 20,
+            },
+            1028: {
+                spaceBetween: 30,
+            },
+        },
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
 </html>
