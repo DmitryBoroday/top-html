@@ -3,12 +3,8 @@
 @tailwind utilities; */
 
 :root {
-    --primary-color: #007bff;
-    /* A blue color */
-    --secondary-color: #6c757d;
-    /* A grey color */
+    --primary-color: #ffa01a;
     --text-color: #d0d0d0;
-    /* A dark grey for text */
 }
 
 * {
@@ -19,6 +15,14 @@
 
 a {
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 body {
@@ -37,21 +41,65 @@ header {
     align-items: center;
     width: 80%;
     margin-inline: auto;
-    padding: 3rem 0
+    padding-top: 5rem;
+    padding-bottom: 3rem;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    justify-items: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 1rem;
-    width: 80%;
-    background-color: gray;
-    border-radius: 12px;
+    top: 0.5rem;
+    width: 98%;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0px 6px 21px -5px #000000;
+    border-radius: 32px;
+    z-index: 50;
 }
+.logo {
+    margin: 6px;
+    padding: 0.5rem 1rem;
+    border: solid;
+    border-radius: 32px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.mobLogo {
+    display: none;
+    margin-left: 4px;
+    padding: 0.5rem 1rem;
+    border: solid;
+    border-radius: 32px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    align-self: start;
+}
+.navLinks {
+    display: flex;
+    gap: 1rem;
+    padding-right: 20%;
+}
+.navLinks a {
+    color: var(--text-color);
+}
+.navLinks a:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+  /* Mobile Menu Touggle*/
+  .mobile-menu-toggle {
+    position: fixed;
+    top: 22px;
+    right: 2rem;
+    z-index: 50;
+    color: var(--text-color);
+    cursor: pointer;
+  }
 
 /* Swiper Styles */
  .swiper {
@@ -84,7 +132,7 @@ nav {
 }
 
 .heroTitle {
-    color: rgb(255, 136, 0);
+    color: white;
     font-weight: 500;
     font-size: 120px;
     text-align: center;
@@ -92,7 +140,7 @@ nav {
 }
 
 .heroSubtitle {
-    color: rgb(229, 81, 1);
+    color: white;
     font-weight: 500;
     text-align: center;
 }
@@ -254,6 +302,8 @@ nav {
 @media screen and (max-width: 768px) {
    header {
     width: 98%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
    }
     .heroTitle{
         font-size: 48px;
@@ -262,20 +312,26 @@ nav {
     nav{
         display: none;
     }
+    .mobLogo{
+        display: block;
+    }
 
     /* Section One */
         .sectionOneAva{
             margin-inline: 4px;
-            width: 50px;
-            height: 50px;
-            border-radius: 100%;
-            object-fit: cover;
+            width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 0.5rem;
-            font-weight: bold;
             color: var(--text-color);
+            font-size: 14px;
+        }
+        .sectionOneAva img {
+           width: 50px;
+           height: 50px;
+           border-radius: 100%;
         }
         .sectionOne {
             width: 100%;
