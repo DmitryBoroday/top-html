@@ -102,18 +102,7 @@ nav {
   }
 
 /* Swiper Styles */
- .swiper {
-     width: 100%;
-     height: 100%;
- }
-
- .swiper-slide {
-    width: 100%;
-    height: 100%;
- }
-
  .swiper-slide img {
-     display: block;
      width: 100%;
      height: 100%;
      object-fit: cover;
@@ -125,11 +114,6 @@ nav {
     left: 2rem;
     font-size: 120px;
  }
-
-.container {
-    width: 96%;
-    margin-inline: auto;
-}
 
 .heroTitle {
     color: white;
@@ -161,10 +145,9 @@ nav {
     cursor: pointer;
     color: black;
     font-size: 24px;
-}
+} 
 
 /* Section One */
-
 .sectionOne {
     width: 98%;
     height: 700px;
@@ -173,18 +156,22 @@ nav {
     flex-direction: row;
     gap: 2rem;
 }
-
 .sectionOneAva {
     display: none;
 }
-
 .videoOne {
     width: 30%;
     height: 700px;
     border-radius: 44px;
     object-fit: cover;
 }
-
+.swiper-slide p {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    color: var(--text-color);
+    font-size: 32px;
+}
 
 /* Section Two */
 .sectionTwo {
@@ -199,6 +186,24 @@ nav {
 .sectionTwoImg {
     width: 40%;
     height: 100%;
+    position: relative;
+}
+.sectionTwoImg h2 {
+    position: absolute;
+    top: 1rem;
+    left: 1.2rem;
+    width: 50%;
+    color: white;
+}
+.sectionTwoImg h2 span {
+    display: none;
+}
+.sectionTwoImg h3 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.2rem;
+    width: 80%;
+    color: white;
 }
 .sectionTwoImg img {
     width: 100%;
@@ -288,7 +293,7 @@ nav {
 }
 
 /* Section Eight Blog */
-.sectionBlog {
+/* .sectionBlog {
     width: 98%;
     height: 500px;
     margin-inline: auto;
@@ -296,11 +301,11 @@ nav {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-}
+} */
 
 /* Styles applied only when the screen width is 768px or less */
 @media screen and (max-width: 768px) {
-   header {
+   header { 
     width: 98%;
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -314,7 +319,7 @@ nav {
     }
     .mobLogo{
         display: block;
-    }
+    } 
 
     /* Section One */
         .sectionOneAva{
@@ -348,10 +353,18 @@ nav {
         }
         .swiper {
             width: 94%;
-            height: 210px;
+            height: 100%;
         }
         .swiper-slide img {
-          border-radius: 24px;
+          border-radius: 32px;
+          height: 240px;
+        }
+        .swiper-slide p {
+            position: inherit;
+            padding: 1rem 0;
+            text-align: start;
+            left: 0.5rem;
+            font-size: x-large;
         }
 
         /* Section Two */
@@ -362,8 +375,29 @@ nav {
          display: flex;
          flex-direction: column;
          gap: 8px;
+         margin-top: 0;
+        }
+        .sectionTwoImg h2 {
+         position: inherit;
+         width: 100%;
+         color: var(--text-color);
+         font-size: x-large;
+         padding-bottom: 1rem;
+         display: flex;
+         }
+         .sectionTwoImg h2 span {
+            display: block;
+            color: #ff2626;
+         }
+        .sectionTwoImg h3 {
+         position: inherit;
+         width: 100%;
+         color: var(--text-color);
+         font-size: medium;
+         padding: 0.6rem 0rem 1rem 1rem;
         }
         .sectionTwoImg {
+         position: inherit;
          width: 94%;
          height: 100%;
          margin-inline: auto;
@@ -371,7 +405,7 @@ nav {
         .sectionTwoImg img {
          width: 100%;
          height: 100%;
-         border-radius: 24px;
+         border-radius: 32px;
         }
         .videoTwo {
          width: 100%;
@@ -381,7 +415,7 @@ nav {
         }
 
         /* Section Free Hot */
-        .sectionHot {
+        /* .sectionHot {
         width: 100%;
         height: 100%;
         margin-inline: auto;
@@ -404,10 +438,10 @@ nav {
             width: 96%;
             height: 210px;
             border-radius: 24px;
-        }
+        } */
 
         /* Section Four Popular Swiper */
-        .sectionPop {
+        /* .sectionPop {
                     width: 100%;
                     height: 100%;
                     margin-inline: auto;
@@ -430,35 +464,35 @@ nav {
                     width: 96%;
                     height: 210px;
                     border-radius: 24px;
-        }
+        } */
 
         /* Section Six New Agencies */
-        .sectionNew {
+        /* .sectionNew {
         width: 100%;
         height: 100%;
         margin-inline: auto;
         display: flex;
         flex-direction: column;
         gap: 8px;
-        }
+        } */
 
         /* Section Seven Tours */
-        .sectionTours {
+        /* .sectionTours {
         width: 100%;
         height: 100%;
         margin-inline: auto;
         display: flex;
         flex-direction: column-reverse;
         gap: 8px;
-        }
+        } */
 
         /* Section Eight Blog */
-        .sectionBlog {
+        /* .sectionBlog {
             width: 100%;
             height: 100%;
             margin-inline: auto;
             display: flex;
             flex-direction: column-reverse;
             gap: 8px;
-        }
+        } */
 }
