@@ -365,8 +365,8 @@ nav {
 
     /* Section One */
         .sectionOneAva{
-            padding-inline: 4px;
-            width: 98%;
+            padding-inline: 6px;
+            width: 96%;
             height: 100%;
             display: flex;
             flex-direction: row;
@@ -390,7 +390,7 @@ nav {
             margin-inline: auto;
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 1.6rem;
         }
         .videoOne {
             width: 100%;
@@ -410,9 +410,9 @@ nav {
           border-radius: 32px;
           height: 210px;
         }
-        .swiper-slide p {
-            position: inherit;
-            padding: 1rem 0;
+        .mySwiper .swiper-slide p {
+            position: static;
+            padding: 0.2rem 0 2rem 0.4rem;
             text-align: start;
             left: 0.5rem;
             font-size: large;
@@ -468,8 +468,8 @@ nav {
 
         /* Section Free Hot */
         .sectionHotAva{
-            padding-inline: 4px;
-            width: 98%;
+            margin-inline: auto;
+            width: 96%;
             height: 100%;
             display: flex;
             flex-direction: row;
@@ -519,13 +519,7 @@ nav {
         width: 94%;
         height: 100%;
         margin-inline: auto;
-        }
-        .sectionHotImg img {
-          width: 100%;
-          height: 100%;
-          border-radius: 24px;
-          object-fit: cover;
-        }
+        }   
         .sectionHot .swiper-wrapper{
             padding-left: 14px;
         }
@@ -534,7 +528,20 @@ nav {
             height: 210px;
             border-radius: 0;
         }
-
+         .mySwiperHot img {
+          width: 100%;
+          height: 100%;
+          border-radius: 24px;
+          object-fit: cover;
+        }
+        .mySwiperHot p {
+            font-size: 16px;
+            left: 0.66rem;
+            bottom: 0.6rem;
+            width: 60%;
+            color: white;
+        }
+        
         /* Section Four Popular Swiper */
         .sectionPop {
                     width: 100%;
