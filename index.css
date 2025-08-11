@@ -21,75 +21,105 @@ ul {
     list-style: none;
 }
 
-img {
-    max-width: 100%;
-}
-
 body {
     background-color: black;
-    font-family: 'Unbounded',sans-serif;
+    font-family: 'Poiret One',sans-serif;
     scroll-behavior: smooth;
     user-select: none;
     color: white;
 }
 
 header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+header .logo {
+    position: absolute;
+    top: 1rem;
+    left: 6rem;
+    font-weight: bolder;
+    font-size: 24px;
+    border-radius: 28px;
+    padding-inline: 0.8rem;
+    padding-bottom: 0.3rem;
+    color: black;
+    background-color: rgb(255, 169, 10);
+}
+header picture img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+header article {
+    position: absolute;
+    left: 6rem;
+    bottom: 0;
+    width: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    justify-items: center;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+header article h1 {
+    text-align: start;
+    font-size: 100px;
+    line-height: 100px;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+}
+header article h2 {
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+    font-size: 32px;
+}
+header article a {
+    background-color: #f39108;
+    display: flex;
     align-items: center;
-    width: 80%;
-    margin-inline: auto;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
+    gap: 1rem;
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 22px;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0.5rem;
+@media screen and (max-width: 768px) {
+    header picture img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+    header .logo {
+    left: 1rem;
+}
+    header article {
+    position: absolute;
+    margin-inline: auto;
+    left: 0;
+    bottom: 0;
     width: 98%;
-    background-color: rgb(20, 20, 20);
-    box-shadow: 0px 6px 21px -5px #000000;
-    border-radius: 32px;
-    z-index: 50;
-}
-.logo {
-    margin: 6px;
-    padding: 0.5rem 1rem;
-    border: solid;
-    border-radius: 32px;
-    border-color: var(--primary-color);
-    color: var(--primary-color);
-}
-.mobLogo {
-    display: none;
-    margin-left: 4px;
-    padding: 0.5rem 1rem;
-    border: solid;
-    border-radius: 32px;
-    border-color: var(--primary-color);
-    color: var(--primary-color);
-    font-weight: 500;
-    align-self: start;
-}
-.navLinks {
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    padding-right: 20%;
 }
-.navLinks a {
-    color: var(--text-color);
+    header article h1 {
+    text-align: center;
+    font-size: 40px;
+    line-height: normal;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
 }
-.navLinks a:hover {
-    color: gray;
-    cursor: pointer;
+    header article h2 {
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+    font-size: 22px;
+    text-align: center;
 }
+}
+
+
 
   /* Mobile Menu Touggle*/
   .mobile-menu-toggle {
@@ -172,7 +202,7 @@ nav {
 /* Section Two */
 .sectionTwo {
     width: 98%;
-    height: 500px;
+    height: 560px;
     margin-inline: auto;
     margin-top: 2rem;
     display: flex;
@@ -209,12 +239,21 @@ nav {
 }
 .videoTwo {
     width: 60%;
-    height: 500px;
+    height: 560px;
     border-radius: 44px;
     object-fit: cover;
 }
 
 /* Section Three Hot Deals Swiper */
+.sectionHot{
+    width: 98%;
+    height: 560px;
+    margin-inline: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
 .sectionHotAva {
     display: none;
 }
@@ -229,15 +268,6 @@ nav {
     padding: 0.5rem 0.7rem;
     border-radius: 18px;
     font-size: 12px;
-}
-.sectionHot{
-    width: 98%;
-    height: 500px;
-    margin-inline: auto;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
 }
 .sectionHotImg{
     width: 60%;
@@ -289,7 +319,7 @@ nav {
 /* Section Four Pop Countries Swiper */
 .sectionPop{
     width: 98%;
-    height: 500px;
+    height: 560px;
     margin-inline: auto;
     margin-top: 2rem;
     display: flex;
@@ -308,7 +338,7 @@ nav {
 }
 .popSwiper {
     width: 40%;
-    height: 500px;
+    height: 560px;
     border-radius: 44px;
 }
 .popBannerLink {
@@ -336,13 +366,29 @@ nav {
 /* Section Seven Tours */
 .sectionTours {
     width: 98%;
-    height: 500px;
+    height: 560px;
     margin-inline: auto;
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
+.sectionToursImg {
+    width: 60%;
+    height: 100%;
+}
+.sectionToursImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 44px;
+    object-fit: cover;
+}
+.toursSwiper {
+    width: 40%;
+    height: 560px;
+    border-radius: 44px;
+}
+
 
 /* Section Eight Blog */
 /* .sectionBlog {
@@ -356,7 +402,7 @@ nav {
 } */
 
 /* Styles applied only when the screen width is 768px or less */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
    header { 
     width: 98%;
     padding-top: 1rem;
@@ -387,7 +433,7 @@ nav {
     } 
 
     /* Section One */
-        .sectionOneAva{
+        /* .sectionOneAva{
             padding-inline: 6px;
             width: 96%;
             height: 100%;
@@ -439,9 +485,9 @@ nav {
             font-size: large;
             font-weight: 600;
             color: var(--text-color);
-        }
+        } */
         /* Section Two Video*/
-       .sectionTwo {
+       /* .sectionTwo {
          width: 100%;
          height: 100%;
          margin-inline: auto;
@@ -485,10 +531,10 @@ nav {
          height: 210px;
          border-radius: 0;
          object-fit: cover;
-        }
+        } */
 
         /* Section Free Hot */
-        .sectionHotAva{
+        /* .sectionHotAva{
             margin-inline: auto;
             width: 96%;
             height: 100%;
@@ -567,10 +613,10 @@ nav {
             bottom: 0.6rem;
             width: 60%;
             color: white;
-        }
+        } */
         
         /* Section Four Popular Swiper */
-        .sectionPop {
+        /* .sectionPop {
             width: 100%;
             height: 100%;
             margin-inline: auto;
@@ -608,35 +654,34 @@ nav {
         }
         .sectionPop .popBannerLink {
             display: none;
-        }
+        } */
 
         /* Section Six New Agencies */
-        .sectionNew {
+        /* .sectionNew {
         width: 100%;
         height: 100%;
         margin-inline: auto;
         display: flex;
         flex-direction: column;
         gap: 8px;
-        }
+        } */
 
         /* Section Seven Tours */
-        .sectionTours {
-        width: 100%;
-        height: 100%;
-        margin-inline: auto;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 8px;
-        }
+        /* .sectionTours {
+           width: 100%;
+           height: 100%;
+           margin-inline: auto;
+           display: flex;
+           flex-direction: column-reverse;
+           gap: 8px;
+        } */
 
         /* Section Eight Blog */
-        .sectionBlog {
+        /* .sectionBlog {
             width: 100%;
             height: 100%;
             margin-inline: auto;
             display: flex;
             flex-direction: column-reverse;
             gap: 8px;
-        }
-}
+        } */

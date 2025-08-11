@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: #ffa01a;
+    --text-color: rgb(194, 194, 194);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: black;
+    font-family: 'Poiret One',sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+    color: white;
+}
+
+
+/* Hot Deals Route */
+.routeHero {
+    margin-top: 4rem;
+    width: 90%;
+    height: 700px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: pink; */
+}
+.routeVideoBlock {
+    border-radius: 44px;
+    width: 30%;
+    height: 100%;
+}
+.routeVideoBlock video {
+    object-fit: cover;
+    border-radius: 44px;
+    background-color: black;
+}
+.routeContentBlock {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: rgb(13, 15, 15);
+  border-radius: 44px;
+}
+.routeContentBlock h1 {
+    color: white;
+    font-size: 120px;
+    line-height: 100px;
+    margin-bottom: 1rem;
+}
+.routeContentBlock h2 {
+    color: white;
+    font-size: 40px;
+    width: 70%;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+   .routeHero {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+   .routeVideoBlock {
+    border-radius: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}   
+   .routeVideoBlock video {
+    object-fit: cover;
+    border-radius: 32px;
+}
+   .routeContentBlock {
+     position: absolute;
+     bottom: 4rem;
+     left: 0.6rem;
+     width: 90%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
+     padding-inline: 0;
+     padding-right: 4px;
+     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+}
+   .routeContentBlock h1 {
+    width: 90%;
+    color: white;
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 0.4rem;
+}
+   .routeContentBlock h2 {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+}

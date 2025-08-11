@@ -8,9 +8,7 @@
     <title>Эскорт вакансии по странам от topescort</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Unbounded:wght@200..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel='icon' type='image/png' href='./favicon.png'>
     <link rel='stylesheet' href='/index.css'>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -33,110 +31,39 @@
 </head>
 <body>
     <header>
-        <!-- Top Navbar -->
-        <nav>
-            <div class='logo'>
-                <span>topescort</span>
-            </div>
-            <!-- Central Nav -->
-            <ul class='navLinks'>
-                <li>
-                    <a href='/about.html'>О нас</a>
-                </li>
-                <li>
-                    <a href='/locations.html'>Весь мир</a>
-                </li>
-                <li>
-                    <a href='/popularCountries.html'>Популярные страны</a>
-                </li>
-                <li>
-                    <a href='/hotDeals.html'>Горячие предложения</a>
-                </li>
-                <li>
-                    <a href='/tours.html'>Прибыльные туры</a>
-                </li>
-                <li>
-                    <a href='/newAgencies.html'>Новые агентства</a>
-                </li>
-                <li>
-                    <a href='/blog.html'>Наш блог</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Hamburger Btn -->
-            <div class='mobile-menu-toggle'>
-             <span class='material-symbols-outlined'>
-                menu
-             </span>
-            </div>
-
-        <!-- Side Bar Menu -->
-            <!-- <div class='mobile-menu'>
-                <div class='mobile-menu-items'>
-                    <ul class='mobile-menu-list'>
-                        <li>
-                            <span class="material-symbols-outlined">
-                                info
-                            </span>
-                            <a href='/about.html'>О нас</a>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">
-                              globe
-                            </span>
-                            <a href='/locations.html'>Весь мир</a>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">
-                             globe_location_pin
-                            </span>
-                            <a href='/popularCountries.html'>Популярные страны</a>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">
-                                mode_heat
-                             </span>        
-                            <a href='/hotDeals.html'>Горячие предложения</a>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">
-                              paid
-                            </span>
-                            <a href='/tours.html'>Прибыльные туры</a>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">
-                              add_location_alt
-                             </span>
-                            <a href='/newAgencies.html'>Новые агентства</a>
-                        </li>
-                        <li>
-                            <span class="material-symbols-outlined">
-                              tag
-                            </span>
-                            <a href='/blog.html'>Наш блог</a>
-                        </li>
-                    </ul>
-                </div>
-            </div> -->
-        <div class='mobLogo'>
-            <span>topescort</span>
+        <div class='logo'>
+          <p>topescort</p>
         </div>
-        <!-- Hero Title/Subtitle -->
-        <h1 class='heroTitle'>Работа в эскорте для девушек</h1>
-        <h2 class='heroSubtitle'>Найди работу в эскорте от лучших агентств в любой точке мира</h2>
-        <a href='/locations.html' class='heroLink'>
-            <p>Подобрать агентство</p><span class="material-symbols-outlined">
-                arrow_circle_right
-            </span>
-        </a>
+         <picture>
+            <source
+                media='(min-width: 768px)'
+                srcSet='/assets/images/hero/heroDesk.avif'
+            />
+            <img
+                title=''
+                src='/assets/images/hero/heroMob.avif'
+                alt=''
+                width={400}
+                height={900}
+                loading='eager'
+                fetchPriority='high'
+            />
+          </picture>
+          <article>
+            <h1>Работа в эскорте для девушек</h1>
+            <h2>Найди работу в эскорте от лучших агентств в любой точке мира</h2>
+            <a href='/locations.html'>
+             <p>Подобрать агентство</p><span class="material-symbols-outlined">
+                arrow_forward_ios
+              </span>
+            </a>
+          </article>
     </header>
 
     <!-- Hero content -->
     <main>
-        <!-- First Video Banner Section-->
-        <section class='sectionOne'>
+       
+        <!-- <section class='sectionOne'>
             <video class='videoOne' loop autoPlay muted playsInline preload='auto' width='100%' height='100%'
                 poster='../assets/videos/heroPoster.avif'>
                 <source src='../assets/videos/heroMob.mp4' type='video/mp4' media='(max-width:480px)'>
@@ -144,7 +71,7 @@
                 <source src='../assets/videos/heroDesk.mp4' type='video/mp4'>
                 </source>
             </video>
-            <!-- Section Ava -->
+           
             <div class='sectionOneAva'>
                 <img 
                 title='Фото эскортницы' 
@@ -160,7 +87,7 @@
                     Неограниченный доступ<br /> к лучшим эскорт агентвам
                 </p>
             </div>
-            <!-- Main Swiper -->
+            
             <div class='swiper mySwiper'>
                 <div class='swiper-wrapper'>
                     <div class='swiper-slide'>
@@ -263,10 +190,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <!-- Second Video Banner Section -->
-        <section class='sectionTwo'>
+        
+        <!-- <section class='sectionTwo'>
             <div class='sectionTwoImg'>
                 <h2><span class="material-symbols-outlined">
                       format_quote
@@ -284,17 +211,25 @@
                     заинтересованы в сотрудничестве с моделями самого разного типажа,
                     возраста и уровня предоставляемых услуг</h3>
             </div>
-            <video class='videoTwo' loop autoPlay muted playsInline preload='auto' width='100%' height='100%'
-                poster='../assets/videos/heroPosterTwo.avif'>
+            <video 
+             class='videoTwo' 
+             loop 
+             autoPlay 
+             muted 
+             playsInline
+             preload='auto' 
+             width='100%' 
+             height='100%'
+             poster='../assets/videos/heroPosterTwo.avif'>
                 <source src='../assets/videos/boatMob.mp4' type='video/mp4' media='(max-width:480px)'>
                 </source>
                 <source src='../assets/videos/boatDesk.mp4' type='video/mp4'>
                 </source>
             </video>
-        </section>
+        </section> -->
 
-        <!-- Third Hot Deals Swiper Banner Section -->
-        <section class='sectionHot'>
+       
+        <!-- <section class='sectionHot'>
             <div class='sectionHotImg'>
                 <h2>
                     <span class="material-symbols-outlined">
@@ -316,12 +251,12 @@
                     знакомства. Многие мужчины поддерживают финансово своих девочек для
                     секса!
                 </h3>
-                <!-- Hot Banner Link -->
+               
                 <a href='/hotDeals.html' class='hotBannerLink'>
                   Горячие вакансии
                 </a>
             </div>
-               <!-- Hot Swiper -->
+              
             <div class='swiper mySwiperHot'>
                 <div class='swiper-wrapper'>
                     <div class='swiper-slide'>
@@ -373,7 +308,7 @@
                     </div>
                 </div>
             </div>
-              <!-- Hot Ava -->
+            
             <div class='sectionHotAva'>
                 <div class='sectionHotAvaInner'>
                    <img 
@@ -394,11 +329,11 @@
                    Смотреть все
                 </a>
             </div>
-        </section>
+        </section> -->
 
-        <!-- Popular Section Banner Swiper -->
-        <section class='sectionPop'>
-            <!-- Section Pop Ava -->
+        
+        <!-- <section class='sectionPop'>
+            
             <div class='sectionHotAva'>
                 <div class='sectionHotAvaInner'>
                    <img 
@@ -419,7 +354,7 @@
                    Больше стран
                 </a>
             </div>
-            <!-- Pop Swiper -->
+           
             <div class='swiper popSwiper'>
                 <div class='swiper-wrapper'>
                     <div class='swiper-slide'>
@@ -464,7 +399,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Pop Banner -->
+           
             <div class='sectionHotImg'>
                 <h2>
                     <span class="material-symbols-outlined">
@@ -486,10 +421,10 @@
                   Больше стран
                 </a>
             </div>
-        </section>
+        </section> -->
 
-        <!-- Section Four Video Banner  -->
-        <section class='sectionTwo'>
+       
+        <!-- <section class='sectionTwo'>
             <video class='videoTwo' loop autoPlay muted playsInline preload='auto' width='100%' height='100%'
                 poster='../assets/videos/luxuryPoster.avif'>
                 <source src='../assets/videos/luxuryMob.mp4' type='video/mp4' media='(max-width:480px)'>
@@ -520,10 +455,10 @@
                     уровнем жизни
                 </h3>
             </div>
-        </section>
+        </section> -->
 
-        <!-- Section Six New Agencies Banner Swiper -->
-        <section class='sectionPop'>
+     
+        <!-- <section class='sectionPop'>
             <div class='sectionHotAva'>
                 <div class='sectionHotAvaInner'>
                    <img 
@@ -544,7 +479,7 @@
                    Смотреть все
                 </a>
             </div>
-            <div class='swiper mySwiper popSwiper'>
+            <div class='swiper newSwiper'>
                 <div class='swiper-wrapper'>
                     <div class='swiper-slide slide'>
                         <a href='/about.html'>
@@ -610,15 +545,21 @@
                      этим!
                 </h3>
             </div>
-        </section>
+        </section> -->
 
-        <!-- Section Seven Tours Banner Swiper
-        <section class='sectionTours'>
-            <div class='sectionHotImg'>
-                <img src='../assets/images/hero/secSevenImage.avif' alt='Фото успешной эскортницы' width={800}
-                    height={500} loading='eager' fetchPriority='high' />
+       
+        <!-- <section class='sectionTours'>
+            <div class='sectionToursImg'>
+                <img 
+                  src='../assets/images/hero/secSevenImage.avif' 
+                  alt='Фото успешной эскортницы' 
+                  width={800}
+                  height={560} 
+                  loading='eager' 
+                  fetchPriority='high' 
+                  />
             </div>
-            <div class='swiper mySwiper hotSwiper'>
+            <div class='swiper toursSwiper'>
                 <div class='swiper-wrapper'>
                     <div class='swiper-slide slide'>
                         <a href='/about.html'>
@@ -757,6 +698,33 @@
                 },
             },
             
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+    <!-- Tours Swiper -->
+     <script>
+        var swiperTours = new Swiper(".toursSwiper", {
+            breakpoints: {
+                320: {
+                    spaceBetween: 14,
+                    slidesPerView: 1.7,
+                    centeredSlides: false
+                },
+                768: {
+                    spaceBetween: 20,
+                    slidesPerView: 1.7,
+                    centeredSlides: false
+                },
+                1028: {
+                    spaceBetween: 30,
+                    slidesPerView: 1,
+                    centeredSlides: true,
+                },
+            },
             autoplay: {
                 delay: 4000,
                 disableOnInteraction: false,
