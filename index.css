@@ -250,6 +250,19 @@ nav {
     border-radius: 44px;
     object-fit: cover;
 }
+.hotBannerLink {
+    position: absolute;
+    right: 1.66rem;
+    bottom: 1rem;
+    background-color: rgb(149, 133, 116);
+    color: white;
+    padding: 1rem;
+    border-radius: 28px;
+}
+.hotBannerLink:hover {
+    background-color: rgb(202, 183, 160);
+    transition: all;
+}
 .sectionHotImg h2 {
     position: absolute;
     top: 1rem;
@@ -298,6 +311,16 @@ nav {
     height: 500px;
     border-radius: 44px;
 }
+.popBannerLink {
+    position: absolute;
+    right: 1.66rem;
+    bottom: 1rem;
+    background-color: rgb(184, 126, 135);
+    color: white;
+    padding: 1rem;
+    border-radius: 28px;
+}
+
 
 /* Section Six New Agencies */
 .sectionNew {
@@ -397,10 +420,8 @@ nav {
             height: 210px;
             border-radius: 0;
         }
-        .sectionOne .swiper {
+        .sectionOne .mySwiper {
           width: 100%;
-        }
-        .sectionOne .mySwiper{
           border-radius: 0;
         }
         .sectionOne .swiper-wrapper{
@@ -419,7 +440,7 @@ nav {
             font-weight: 600;
             color: var(--text-color);
         }
-        /* Section Two */
+        /* Section Two Video*/
        .sectionTwo {
          width: 100%;
          height: 100%;
@@ -515,11 +536,17 @@ nav {
          font-size: small;
          padding: 0.6rem 0.6rem 1rem 1rem;
         }
+        .sectionHot .hotBannerLink {
+            display: none;
+        }
         .sectionHotImg {
-        width: 94%;
-        height: 100%;
-        margin-inline: auto;
+          width: 94%;
+          height: 100%;
+          margin-inline: auto;
         }   
+        .sectionHotImg img {
+            border-radius: 32px;
+        }
         .sectionHot .swiper-wrapper{
             padding-left: 14px;
         }
@@ -544,12 +571,12 @@ nav {
         
         /* Section Four Popular Swiper */
         .sectionPop {
-                    width: 100%;
-                    height: 100%;
-                    margin-inline: auto;
-                    display: flex;
-                    flex-direction: column-reverse;
-                    gap: 8px;
+            width: 100%;
+            height: 100%;
+            margin-inline: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
         }
         .sectionPopImg {
                     width: 94%;
@@ -557,15 +584,30 @@ nav {
                     margin-inline: auto;
         }   
         .sectionPopImg img {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 24px;
-                    object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 24px;
+            object-fit: cover;
         }
         .popSwiper {
-                    width: 96%;
-                    height: 210px;
-                    border-radius: 24px;
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+        }
+        .sectionPop .swiper-wrapper{
+            padding-left: 14px;
+        }
+        .popSwiper .swiper-slide p {
+            position: static;
+            padding: 0.2rem 0 1rem 0.4rem;
+            text-align: start;
+            left: 0.5rem;
+            font-size: large;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        .sectionPop .popBannerLink {
+            display: none;
         }
 
         /* Section Six New Agencies */

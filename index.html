@@ -189,7 +189,7 @@
                                 fetchPriority='high'
                             />                    
                         </a>
-                        <p class='slide-p'>Горячие вакансии</p>
+                        <p>Горячие вакансии</p>
                     </div>
                     <div class="swiper-slide">
                         <a href='/popularCountries.html'>
@@ -203,7 +203,7 @@
                                 fetchPriority='high'
                             />
                         </a>
-                        <p class='slide-p'>Популярные страны</p>
+                        <p>Популярные страны</p>
                     </div>
                     <div class="swiper-slide">
                         <a href='/locations.html'>                   
@@ -217,7 +217,7 @@
                                 fetchPriority='high'
                             />
                         </a>
-                        <p class='slide-p'>Весь мир</p>
+                        <p>Весь мир</p>
                     </div>
                     <div class="swiper-slide">
                         <a href='/tours.html'>   
@@ -231,7 +231,7 @@
                                 fetchPriority='high'
                             />
                         </a>
-                        <p class='slide-p'>Прибыльные туры</p>
+                        <p>Прибыльные туры</p>
                     </div>
                     <div class="swiper-slide">
                         <a href='/newAgencies.html'>             
@@ -245,7 +245,7 @@
                                 fetchPriority='high'
                             />                     
                         </a>
-                        <p class='slide-p'>Новые агентства</p>
+                        <p>Новые агентства</p>
                     </div>
                     <div class="swiper-slide">
                         <a href='/blog.html'>        
@@ -259,7 +259,7 @@
                                 fetchPriority='high'
                             />
                         </a>
-                        <p class='slide-p'>Наш блог</p>
+                        <p>Наш блог</p>
                     </div>
                 </div>
             </div>
@@ -316,6 +316,10 @@
                     знакомства. Многие мужчины поддерживают финансово своих девочек для
                     секса!
                 </h3>
+                <!-- Hot Banner Link -->
+                <a href='/hotDeals.html' class='hotBannerLink'>
+                  Горячие вакансии
+                </a>
             </div>
                <!-- Hot Swiper -->
             <div class='swiper mySwiperHot'>
@@ -393,16 +397,38 @@
         </section>
 
         <!-- Popular Section Banner Swiper -->
-        <!-- <section class='sectionPop'>
-            <div class='swiper mySwiper popSwiper'>
+        <section class='sectionPop'>
+            <!-- Section Pop Ava -->
+            <div class='sectionHotAva'>
+                <div class='sectionHotAvaInner'>
+                   <img 
+                    title='Фото эскортницы' 
+                    src='../assets/images/hero/popAva.avif' 
+                    class='sectionOneAva'
+                    alt='Фото эскортницы' 
+                    width={64} 
+                    height={64} 
+                    loading='eager' 
+                    fetchPriority='high' 
+                   />
+                <p>
+                    Популярные<br /> страны
+                </p>
+                </div>
+                <a href='/popularCountries.html' class='hotAvaLink'>
+                   Больше стран
+                </a>
+            </div>
+            <!-- Pop Swiper -->
+            <div class='swiper popSwiper'>
                 <div class='swiper-wrapper'>
-                    <div class='swiper-slide slide'>
+                    <div class='swiper-slide'>
                         <a href='/about.html'>
                             <img title='Подробно про нашу платформу' src='../assets/images/hero/secOneAbout.avif'
                                 class='hotSwiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
                                 fetchPriority='high' />
                         </a>
-                        <p class='slide-p'>О нас</p>
+                        <p>О нас</p>
                     </div>
                     <div class="swiper-slide">
                         <a href='/hotDeals.html'>
@@ -410,7 +436,7 @@
                                 class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
                                 fetchPriority='high' />
                         </a>
-                        <p class='slide-p'>Горячие вакансии</p>
+                        <p>Горячие вакансии</p>
                     </div>
                     <div class="swiper-slide">
                         <a href='/popularCountries.html'>
@@ -418,7 +444,7 @@
                                 class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
                                 fetchPriority='high' />
                         </a>
-                        <p class='slide-p'>Горячие вакансии</p>
+                        <p>Горячие вакансии</p>
                     </div>
                     <div class="swiper-slide">
                         <a href='/locations.html'>
@@ -426,7 +452,7 @@
                                 class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
                                 fetchPriority='high' />
                         </a>
-                        <p class='slide-p'>Весь мир</p>
+                        <p>Весь мир</p>
                     </div>
                     <div class="swiper-slide">
                         <a href='/tours.html'>
@@ -434,17 +460,35 @@
                                 class='swiper-slide' alt='Фото эскортницы' width={100%} height={100%} loading='eager'
                                 fetchPriority='high' />
                         </a>
-                        <p class='slide-p'>Прибыльные туры</p>
+                        <p>Прибыльные туры</p>
                     </div>
                 </div>
             </div>
-            <div class='sectionPopImg'>
-                <img src='../assets/images/hero/secFourImage.avif' alt='Фото успешной эскортницы' width={800}
-                    height={500}loading='eager' fetchPriority='high' />
+            <!-- Pop Banner -->
+            <div class='sectionHotImg'>
+                <h2>
+                    <span class="material-symbols-outlined">
+                      format_quote
+                    </span> Проститутки, индивидуалки, девушки по вызову, cекс-работницы...
+                </h2>
+                <img 
+                  src='../assets/images/hero/secFourImage.avif' 
+                  alt='Фото успешной эскортницы' 
+                  width={800}
+                  height={500}loading='eager' 
+                  fetchPriority='high' 
+                  />
+                <h3>
+                    Так больше никто не говорит! Сегодня эта индустрия в тренде и
+                        приносит баснословные деньги по всему миру!
+                </h3>
+                 <a href='/popularCountries.html' class='popBannerLink'>
+                  Больше стран
+                </a>
             </div>
-        </section> -->
+        </section>
 
-        <!-- Section Four Video Banner 
+        <!-- Section Four Video Banner  -->
         <section class='sectionTwo'>
             <video class='videoTwo' loop autoPlay muted playsInline preload='auto' width='100%' height='100%'
                 poster='../assets/videos/luxuryPoster.avif'>
@@ -454,13 +498,52 @@
                 </source>
             </video>
             <div class='sectionTwoImg'>
-                <img src='../assets/images/hero/secFiveImage.avif' alt='Фото успешной эскортницы' width={400}
-                    height={700} loading='eager' fetchPriority='high' />
+                <h2>
+                    <span class="material-symbols-outlined">
+                      format_quote
+                    </span> 
+                    Зачем заниматься сексом бесплатно, если можно получать за это
+                    хорошие деньги!
+                </h2>
+                <img 
+                  src='../assets/images/hero/secFiveImage.avif'
+                  alt='Фото успешной эскортницы' 
+                  width={400}
+                  height={700} 
+                  loading='eager' 
+                  fetchPriority='high' 
+                  />
+                <h3>
+                    Не трать время на клубы и парней - просто подбери эскорт агентство и
+                    занимайся этим за деньги! Не жди пока кто то угостит тебя бокалом
+                    вина в дорогом ресторане. Ты можешь сама обеспечить себя комфортным
+                    уровнем жизни
+                </h3>
             </div>
-        </section> -->
+        </section>
 
-        <!-- Section Six New Agencies Banner Swiper
-        <section class='sectionNew'>
+        <!-- Section Six New Agencies Banner Swiper -->
+        <section class='sectionPop'>
+            <div class='sectionHotAva'>
+                <div class='sectionHotAvaInner'>
+                   <img 
+                    title='Фото эскортницы' 
+                    src='../assets/images/hero/newAva.avif' 
+                    class='sectionOneAva'
+                    alt='Фото эскортницы' 
+                    width={64} 
+                    height={64} 
+                    loading='eager' 
+                    fetchPriority='high' 
+                   />
+                <p>
+                    Новые<br /> агентства
+                </p>
+                </div>
+                <a href='/newAgencies.html' class='hotAvaLink'>
+                   Смотреть все
+                </a>
+            </div>
             <div class='swiper mySwiper popSwiper'>
                 <div class='swiper-wrapper'>
                     <div class='swiper-slide slide'>
@@ -505,11 +588,29 @@
                     </div>
                 </div>
             </div>
-            <div class='sectionPopImg'>
-                <img src='../assets/images/hero/secSixImage.avif' alt='Фото успешной эскортницы' width={800}
-                    height={500} loading='eager' fetchPriority='high' />
+            <div class='sectionHotImg'>
+                <h2>
+                    <span class="material-symbols-outlined">
+                      format_quote
+                    </span> Чего хочет <br /> современная девушка!?
+                </h2>
+                <img 
+                  src='../assets/images/hero/secSixImage.avif' 
+                  alt='Фото успешной эскортницы' 
+                  width={800}
+                  height={500} 
+                  loading='eager' 
+                  fetchPriority='high' 
+                  />
+                    <h3>
+                     Она хочет чтобы картинка c экрана о роскошной жизни стала
+                     реальностью! Забудь про подделки - покупай вещи самых лучших
+                     брендов! Хватит смотреть как занменитые блоггеры и светские лвицы
+                     ходят с брендовыми сумочками - ты сама можешь обеспечить себя всем
+                     этим!
+                </h3>
             </div>
-        </section> -->
+        </section>
 
         <!-- Section Seven Tours Banner Swiper
         <section class='sectionTours'>
@@ -631,6 +732,31 @@
                     centeredSlides: true,
                 },
             },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+     <!-- Initialize Pop Hero Swiper -->
+    <script>
+        var swiperPop = new Swiper(".popSwiper", {
+            breakpoints: {
+                320: {
+                    spaceBetween: 14,
+                    slidesPerView: 1.13,
+                },
+                768: {
+                    spaceBetween: 20,
+                    slidesPerView: 1,
+                },
+                1028: {
+                    spaceBetween: 30,
+                    slidesPerView: 1,
+                },
+            },
+            
             autoplay: {
                 delay: 4000,
                 disableOnInteraction: false,
