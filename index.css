@@ -39,12 +39,20 @@ header .logo {
     top: 1rem;
     left: 6rem;
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 20px;
     border-radius: 28px;
     padding-inline: 0.8rem;
     padding-bottom: 0.3rem;
-    color: black;
-    background-color: rgb(255, 169, 10);
+    color: white;
+    background-color: black;
+    z-index: 50;
+}
+header .bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(270deg,rgba(0, 0, 0, 0.26) 75%, rgba(0, 0, 0, 1) 100%);
+    z-index: 30;
+    height: 100vh;
 }
 header picture img {
     width: 100%;
@@ -62,6 +70,7 @@ header article {
     justify-content: center;
     align-items: start;
     gap: 1rem;
+    z-index: 50;
 }
 header article h1 {
     text-align: start;
@@ -74,7 +83,7 @@ header article h2 {
     font-size: 32px;
 }
 header article a {
-    background-color: #f39108;
+    background-color: #f94604;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -90,8 +99,13 @@ header article a {
     height: 700px;
     object-fit: cover;
 }
+    header .bg {
+        height: 700px;
+     background: linear-gradient(180deg,rgba(0, 0, 0, 0.26) 75%, rgba(0, 0, 0, 1) 100%);
+}
     header .logo {
-    left: 1rem;
+      top: 0.66rem;
+      left: 0.6rem;
 }
     header article {
     position: absolute;
@@ -108,13 +122,13 @@ header article a {
 }
     header article h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     line-height: normal;
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
 }
     header article h2 {
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
-    font-size: 22px;
+    font-size: 26px;
     text-align: center;
 }
 }
