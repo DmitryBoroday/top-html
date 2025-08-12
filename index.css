@@ -93,14 +93,82 @@ header article a {
     font-size: 22px;
 }
 
+/* Value Section */
+.valueSection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+.valueSection .valueSectionTitle {
+    text-align: center;
+}
+.valueSectionTitle h2{
+  font-size: 16px;
+  font-weight: lighter;
+}
+.valueSectionTitle h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.valueSection video {
+    width: 80%;
+    height: 540px;
+    object-fit: cover;
+}
+.valueGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    width: 80%;
+    height: 100%;
+}
+.valueGridCard {
+    position: relative;
+}
+.valueGridCard img {
+    width: 100%;
+    height: 100%;
+}
+.valueGridCard p {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+}
+
+/* Fisrt Video */
+.firstVideo video{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+
 @media screen and (max-width: 768px) {
+    header {
+    height: 700px;
+}
     header picture img {
     width: 100%;
     height: 700px;
     object-fit: cover;
 }
     header .bg {
-        height: 700px;
+     height: 700px;
      background: linear-gradient(180deg,rgba(0, 0, 0, 0.26) 75%, rgba(0, 0, 0, 1) 100%);
 }
     header .logo {
@@ -116,8 +184,9 @@ header article a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    padding-bottom: 4rem;
     gap: 1rem;
 }
     header article h1 {
@@ -130,6 +199,39 @@ header article a {
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
     font-size: 26px;
     text-align: center;
+}
+
+/* Value Section */
+.valueSection {
+    gap: 0.5rem;
+}
+.valueSectionTitle h2{
+  font-size: 14px;
+  font-weight: lighter;
+}
+.valueSectionTitle h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+.valueSection video {
+    width: 100%;
+    height: 400px;
+}
+.valueGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* First Video */
+.firstVideo video{
+    width: 100%;
+    height: 220px;
+    margin-top: 1rem;
 }
 }
 
