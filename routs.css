@@ -20,10 +20,6 @@ ul {
     list-style: none;
 }
 
-img {
-    max-width: 100%;
-}
-
 body {
     background-color: black;
     font-family: 'Poiret One',sans-serif;
@@ -32,9 +28,8 @@ body {
     color: white;
 }
 
-
-/* Hot Deals Route */
-.routeHero {
+/* Routes Headers */
+header {
     margin-top: 4rem;
     width: 90%;
     height: 700px;
@@ -44,86 +39,157 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    /* background-color: pink; */
 }
-.routeVideoBlock {
-    border-radius: 44px;
+header video {
     width: 30%;
     height: 100%;
-}
-.routeVideoBlock video {
     object-fit: cover;
-    border-radius: 44px;
-    background-color: black;
+    filter: brightness(125%);
 }
-.routeContentBlock {
+
+header article {
+  position: relative;
   width: 70%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-inline: 2rem;
-  background-color: rgb(13, 15, 15);
-  border-radius: 44px;
+  align-items: center;
 }
-.routeContentBlock h1 {
+header article img {
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+    filter: brightness(125%);
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+}
+header article .articleContent {
+    position: absolute;
+    left: 1rem;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+    filter: brightness(125%);
+}
+header article h1 {
     color: white;
     font-size: 120px;
     line-height: 100px;
     margin-bottom: 1rem;
-}
-.routeContentBlock h2 {
-    color: white;
-    font-size: 40px;
     width: 70%;
+}
+header article h2 {
+    color: white;
+    font-size: 30px;
+    width: 70%;
+}
+
+/* Blog Route */
+.blogHeader {
+    position: relative;
+}
+.blogHeader img {
+    position: absolute;
+    inset: 0;
+}
+.blogArticle {
+   position: absolute;
+   right: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: end;
+}
+.blogArticle h1{
+    font-size: 120px;
+    width: 80%;
+}
+.blogArticle h2{
+    font-size: 40px;
+    width: 80%;
+    margin-top: 1rem;
+}
+.blogMain video {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Media Query */
 @media screen and (max-width: 768px) {
-   .routeHero {
+    /* All Routes Hero */
+header {
     margin-top: 0;
     width: 100%;
     height: 100%;
-    margin-inline: auto;
+    margin-inline: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: 0;
 }
-   .routeVideoBlock {
-    border-radius: 0;
+header article {
     width: 100%;
-    height: 100vh;
-    position: relative;
-}   
-   .routeVideoBlock video {
+    height: 800px;
+    display: block;
+}
+header article img {
+    top:0;
+    filter: brightness(125%);
     object-fit: cover;
-    border-radius: 32px;
+    width: 100%;
+    height: 600px;
 }
-   .routeContentBlock {
+header .bg {
      position: absolute;
-     bottom: 4rem;
-     left: 0.6rem;
-     width: 90%;
-     height: 100%;
-     display: flex;
-     flex-direction: column;
-     justify-content: end;
-     padding-inline: 0;
-     padding-right: 4px;
-     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+     inset: 0;
+     z-index: 30;
+     height: 600px;
+     background: linear-gradient(180deg,rgba(0, 0, 0, 0.26) 75%, rgba(0, 0, 0, 1) 100%);
 }
-   .routeContentBlock h1 {
-    width: 90%;
+header article .articleContent {
+    bottom: 2rem;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+    filter: brightness(125%);
+    z-index: 50;
+}
+header article h1 {
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     line-height: normal;
-    margin-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    width: 96%;
+    text-align: center;
 }
-   .routeContentBlock h2 {
+header article h2 {
     color: white;
     font-size: 20px;
+    width: 96%;
+    text-align: center;
+}
+
+header video {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+  
+  
+
+/* Blog Hero */
+.blogHeader img {
+    position: static;
+    width: 100%;
+}
+.blogArticle h1{
+    font-size: 20px;
+    width: 96%;
+}
+.blogArticle h2{
+    font-size: 12px;
+    width: 96%;
+    margin-top: 1rem;
 }
 }

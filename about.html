@@ -4,8 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Про нашу платформу</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel='icon' type='image/png' href='./favicon.png'>
+    <link rel='stylesheet' href='/routs.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <meta name="robots" content="index follow">
+     <!-- Open Graph Meta Tags -->
+    <meta property='og:title' content='My Awesome Page Title'>
+    <meta property='og:description' content='A brief and engaging description of my awesome page'>
+    <meta property='og:image' content='https://www.topescort.pro/og-image.png'>
+    <meta property='og:url' content='https://www.topescort.pro/'>
+    <meta property='og:type' content='website'>
+    <meta property='og:image:width' content='1200'>
+    <meta property='og:image:height' content='630'>
+    <link rel='canonical' href='https://www.topescort.pro/' />
+    <link rel='apple-touch-icon' href='/apple-touch-icon.png'>
+    <meta name='theme-color' content='#000000'>
 </head>
 <body>
-    <h1>Про нас</h1>
+    <header>
+        <video  
+             loop 
+             autoPlay 
+             muted 
+             playsInline 
+             preload='auto' 
+             width='100%' 
+             height='100%'
+             poster='../assets/videos/aboutPoster.avif'>
+            <source 
+             src='../assets/videos/aboutDesk.mp4' 
+             type='video/mp4' 
+             media='(max-width:480px)'
+             >
+            </source>
+            <source src='../assets/videos/aboutDesk.mp4' type='video/mp4'>
+            </source>
+        </video>
+        <article>
+            <div class='bg'></div>
+            <picture>
+               <source
+                media='(min-width: 768px)'
+                srcSet='/assets/images/hero/aboutDesk.avif'
+               />
+               <img
+                title=''
+                src='/assets/images/hero/aboutMob.avif'
+                alt=''
+                width={400}
+                height={900}
+                loading='eager'
+                fetchPriority='high'
+                />
+            </picture>
+            <div class='articleContent'>
+             <h1>Сайт #1 для работы в эскорте</h1>
+            <h2>
+                Мы предлагаем вакансии в высококлассных эскорт-агентствах Европы и за ее пределами. Наши партнеры отличаются своим вниманием к деталям и стремлением предоставить максимальный эффект от работы для моделей
+            </h2>
+            </div>
+        </article>
+        <!-- <div class='logo'>
+          <p>topescort</p>
+        </div>
+        <div class='bg'></div>
+         <picture>
+            <source
+                media='(min-width: 768px)'
+                srcSet='/assets/images/hero/aboutDesk.avif'
+            />
+            <img
+                title=''
+                src='/assets/images/hero/aboutMob.avif'
+                alt=''
+                width={400}
+                height={900}
+                loading='eager'
+                fetchPriority='high'
+            />
+          </picture>
+          <article>
+            <h1>Сайт #1 для работы в эскорте</h1>
+            <h2>Мы предлагаем работу в высококлассных эскорт агентствах Европы и за ее пределами</h2>
+            <a href='/locations.html'>
+             <p>Подобрать агентство</p><span class="material-symbols-outlined">
+                arrow_forward_ios
+              </span>
+            </a>
+          </article> -->
+    </header>
 </body>
 </html>
