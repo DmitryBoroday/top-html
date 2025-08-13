@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --primary-color: #ffa01a;
+    --primary-color: #ff8009;
     --text-color: rgb(194, 194, 194);
 }
 
@@ -14,6 +14,7 @@
 
 a {
     text-decoration: none;
+    background-color: var(--primary-color);
 }
 
 ul {
@@ -148,22 +149,22 @@ header .bg {
      background: linear-gradient(180deg,rgba(0, 0, 0, 0) 81%, rgba(0, 0, 0, 0.26) 88%, rgba(0, 0, 0, 1) 100%);
 }
 header article .articleContent {
-    bottom: 2rem;
+    bottom: 4rem;
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
     filter: brightness(125%);
     z-index: 50;
 }
 header article h1 {
     color: white;
-    font-size: 50px;
-    line-height: normal;
+    font-size: 60px;
+    line-height: 60px;
     margin-bottom: 1rem;
     width: 96%;
     text-align: center;
 }
 header article h2 {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     width: 96%;
     text-align: center;
 }

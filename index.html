@@ -31,11 +31,20 @@
 </head>
 <body>
     <header>
-        <div class='logo'>
-          <p><span>top</span>escort</p>
-        </div>
+        <nav>
+            <div class='navInner'>
+                <span onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
+                  topescort
+                </span>
+             <ul>
+                <span class="material-symbols-outlined">
+                  drag_handle
+                </span>
+             </ul>
+            </div>
+        </nav>
         <div class='bg'></div>
-         <picture>
+         <picture id='hero'>
             <source
                 media='(min-width: 768px)'
                 srcSet='/assets/images/hero/heroDesk.avif'
@@ -54,7 +63,7 @@
             <h1>Работа в эскорте для девушек</h1>
             <h2>Найди работу в эскорте от лучших агентств в любой точке мира</h2>
             <a href='/locations.html'>
-             <p>Подобрать агентство</p><span class="material-symbols-outlined">
+             <p>ПОДОБРАТЬ АГЕНТСТВО</p><span class="material-symbols-outlined">
                 arrow_forward_ios
               </span>
             </a>
@@ -175,8 +184,6 @@
 
         <!-- First Video Banner -->
          <section class='videoSection'>
-            <h2>Эксклюзивные Условия Работы В Эскорте</h2>
-            <h3>На Нашем Сайте Собраны Лучшие Эскорт Агентства Европы И Всего Мира. Наши агентства заинтересованы в сотрудничестве с моделями самого разного типажа, возраста и уровня предоставляемых услуг</h3>
             <video 
              loop 
              autoPlay 
@@ -193,8 +200,35 @@
             </video>
          </section>
 
+         <!-- About Us Section -->
+          <section class='linkBanner'>
+            <p>ВСЕ ОБ ИНДУСТРИИ ЭСКОРТА</p>
+            <h2>Эксклюзивные Условия Работы В Эскорте</h2>
+            <h3>На Нашем Сайте Собраны Лучшие Эскорт Агентства Европы И Всего Мира. Наши агентства заинтересованы в сотрудничестве с моделями самого разного типажа, возраста и уровня предоставляемых услуг</h3>
+            <picture>
+               <source
+                media='(min-width: 768px)'
+                srcSet='/assets/images/sections/aboutDesk.avif'
+               />
+               <img
+                title=''
+                src='/assets/images/sections/aboutMob.avif'
+                alt=''
+                width={400}
+                height={900}
+                loading='eager'
+                fetchPriority='high'
+                />
+            </picture>
+             <a href='/about.html'>
+             <p>УЗНАТЬ О НАС БОЛЬШЕ</p><span class="material-symbols-outlined">
+                arrow_forward_ios
+              </span>
+            </a>
+         </section>
+
          <!-- Hot Deals Section -->
-         <section class='hotDeals'>
+         <section class='linkBanner'>
             <p>ГОРЯЧИЕ ВАКАНСИИ ОТ TOPESCORT</p>
             <h2>Самые Горячие Предложения От Топовых Агентств</h2>
             <h3>Готова изменить свою жизнь? Ты не просто заработаешь, а еще приобретешь полезные знакомства. Многие мужчины поддерживают финансово своих девочек для секса!</h3>
