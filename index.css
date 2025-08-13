@@ -237,7 +237,8 @@ header article a {
 }
     header .bg {
      height: 700px;
-     background: linear-gradient(180deg,rgba(0, 0, 0, 0) 81%, rgba(0, 0, 0, 0.26) 88%, rgba(0, 0, 0, 1) 100%);
+     background: linear-gradient(180deg,rgba(0, 0, 0, 0) 54%, rgba(0, 0, 0, 0.26) 66%, rgba(0, 0, 0, 1) 100%);
+
 }
 header nav .navInner {
     width: 96%;
