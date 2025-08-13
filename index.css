@@ -40,13 +40,17 @@ header .logo {
     left: 6rem;
     font-weight: bolder;
     font-size: 24px;
-    letter-spacing: 2px;
     border-radius: 28px;
     padding-inline: 0.8rem;
     padding-bottom: 0.3rem;
-    color: black;
-    background-color: rgb(255, 138, 29);
+    color: rgb(204, 204, 204);
+    background-color: black;
     z-index: 50;
+    box-shadow: black;
+}
+header .logo span {
+    color: #ff9d00;
+    padding-right: 2px;
 }
 header .bg {
     position: absolute;
