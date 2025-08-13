@@ -81,7 +81,7 @@ header article {
 header article h1 {
     text-align: start;
     font-size: 100px;
-    line-height: 100px;
+    line-height: 80px;
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
 }
 header article h2 {
@@ -115,11 +115,14 @@ header article a {
 }
 .valueSectionTitle h2{
   font-size: 16px;
-  font-weight: lighter;
+  font-weight: light;
+  margin-bottom: 0.5rem;
+  
 }
 .valueSectionTitle h3 {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 .valueSection video {
     width: 80%;
@@ -159,12 +162,71 @@ header article a {
 }
 
 /* Fisrt Video */
-.firstVideo video{
+.videoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    text-align: center;
+}
+.videoSection h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+.videoSection h3 {
+  font-size: 28px;
+  font-weight: lighter;
+  width: 80%;
+}
+.videoSection video{
     width: 100%;
     height: 700px;
     object-fit: cover;
     margin-top: 2rem;
     filter: brightness(125%);
+}
+
+/* Hot Deals Section */
+.hotDeals {
+    height: 100%;
+    width: 80%;
+    margin-inline: auto;
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hotDeals img {
+    object-fit: cover;
+    width: 80vw;
+    height: 600px;
+    filter: brightness(125%);
+}
+.hotDeals h2 {
+    font-size: 40px;
+    filter: brightness(125%);
+}
+.hotDeals h3 {
+     margin-bottom: 1rem;
+     font-size: 28px;
+     font-weight: lighter;
+     filter: brightness(125%);
+}
+.hotDeals a {
+    background-color: #f94604;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -241,10 +303,40 @@ header article a {
 }
 
 /* First Video */
-.firstVideo video{
+.videoSection video{
     width: 100%;
     height: 220px;
     margin-top: 1rem;
+}
+.videoSection h2 {
+   font-size: 28px;
+   font-weight: bold;
+   width: 96%;
+   text-transform: none;
+}
+.videoSection h3 {
+  font-size: 20px;
+  font-weight: lighter;
+  width: 96%;
+}
+
+/* Hot Deals Section */
+.hotDeals {
+    width: 100%;
+    margin-top: 2rem;
+}
+.hotDeals img {
+    height: 100%;
+    width: 100%;
+}
+.hotDeals h2 {
+    width: 96%;
+    font-size: 32px;
+    
+}
+.hotDeals h3 {
+   width: 96%;
+   font-size: 20px;
 }
 }
 
