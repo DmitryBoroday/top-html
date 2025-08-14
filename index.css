@@ -4,7 +4,8 @@
 
 
 :root {
-    --primary-color: #ff8009;
+    --primary-color: #ffb909;
+    --link-color: #bc0303;
     --text-color: rgb(194, 194, 194);
 }
 
@@ -15,7 +16,6 @@
 
 a {
     text-decoration: none;
-    background-color: var(--primary-color);
 }
 
 ul {
@@ -54,12 +54,13 @@ header nav .navInner {
     justify-content: space-between;
     align-items: center;
 }
-header nav .navInner span {
-    border-radius: 24px;
-    color: var(--primary-color);
+header nav .navInner p {
+    font-size: 20px;
     font-weight: bold;
-    font-size: 22px;
-    cursor: pointer;
+    background-color: var(--primary-color);
+    color: black;
+    padding: 0 0.2rem 0.2rem 0.2rem;
+    border-radius: 2px;
 }
 header .bg {
     position: absolute;
@@ -91,12 +92,14 @@ header article {
 header article h1 {
     text-align: start;
     font-size: 100px;
-    line-height: 80px;
+    line-height: 100px;
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+    text-transform: uppercase;
 }
 header article h2 {
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
     font-size: 32px;
+    text-transform: uppercase;
 }
 header article a {
     display: flex;
@@ -106,6 +109,7 @@ header article a {
     padding: 1rem 2rem;
     font-weight: bold;
     font-size: 22px;
+    background-color: var(--link-color);
 }
 
 /* Value Section */
@@ -170,7 +174,7 @@ header article a {
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
 }
 
-/* Fisrt Video */
+/* Video Banners */
 .videoSection {
     display: flex;
     flex-direction: column;
@@ -186,7 +190,7 @@ header article a {
     filter: brightness(125%);
 }
 
-/* Hot Deals Section */
+/* Link Banners */
 .linkBanner {
     height: 100%;
     width: 80%;
@@ -202,7 +206,7 @@ header article a {
 .linkBanner img {
     object-fit: cover;
     width: 80vw;
-    height: 600px;
+    height: 700px;
     filter: brightness(125%);
 }
 .linkBanner h2 {
@@ -224,7 +228,118 @@ header article a {
     font-weight: bold;
     font-size: 28px;
     margin-top: 3rem;
+    background-color: var(--link-color);
 }
+
+/* Wide Link Banner */
+.wideLinkBanner {
+    position: relative;
+    margin-top: 4rem;
+}
+.wideLinkBanner img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(125%);
+}
+.wideLinkBannerBg {
+    position: absolute;
+    inset: 0;
+    margin-top: -1px;
+    z-index: 30;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 53%, rgba(0, 0, 0, 1) 93%, rgba(0, 0, 0, 1) 100%);
+}
+.wideLinkInner {
+    position: absolute;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.wideLinkInner .wideLink {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.wideLinkInner .wideLink p {
+    font-size: 120px;
+    font-weight: bold;
+}
+.wideLinkInner .wideLink h3 {
+    font-size: 40px;
+}
+.wideLinkInner .wideLink a{
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 2rem 6rem;
+    background-color: var(--link-color);
+    margin-top: 2rem;
+}
+.wideLinkInner h2, h4{
+    font-size: 30px;
+    color: rgb(182, 182, 182);
+}
+
+/* Swiper Hot Deals Section */
+.hotDealsSection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hotDealsSection article {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.hotDealsSection article h2 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+.hotDealsSection article h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    width: 40%;
+    margin-inline: auto;
+}
+.hotDealsSection a {
+    background-color: var(--link-color);
+    font-weight: bold;
+    padding: 1rem 2rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.swiper {
+      width: 100%;
+      height: 100%;
+      --swiper-navigation-color: #ffffff !important;
+    }
+
+.swiper-slide {
+      text-align: start;
+      font-size: 22px;
+      font-weight: bold;
+      padding-top: 0.2rem;
+      color: rgb(199, 199, 199);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+.swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
 @media screen and (max-width: 768px) {
     header {
@@ -254,7 +369,7 @@ header nav .navInner {
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     gap: 1rem;
 }
     header article h1 {
@@ -318,19 +433,63 @@ header nav .navInner {
 }
 .linkBanner h2 {
     width: 96%;
-    font-size: 32px;
-    
+    font-size: 26px;
 }
 .linkBanner h3 {
    width: 96%;
-   font-size: 20px;
+   font-size: 18px;
 }
 .linkBanner a {
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 0.6rem 1rem; 
     font-size: 20px;
 }
+
+/* About Link Banner */
+.wideLinkInner .wideLink p {
+    font-size: 40px;
+    font-weight: bold;
 }
+.wideLinkInner .wideLink h3 {
+    font-size: 18px;
+}
+.wideLinkInner .wideLink a{
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1rem 1.5rem;
+    background-color: var(--link-color);
+    margin-top: 1rem;
+}
+.wideLinkInner h2, h4{
+    font-size: 16px;
+    text-align: center;
+    color: rgb(182, 182, 182);
+}
+
+
+/* Hot Deals Swiper Link */
+.hotDealsSection {
+    margin-top: 2REM;
+}
+.hotDealsSection article {
+    margin-bottom: 1rem;
+}
+.hotDealsSection article h2 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.hotDealsSection article h3 {
+    font-size: 18px;
+    font-weight: lighter;
+    width: 96%;
+    margin-inline: auto;
+}
+
+}
+
 
 
 
