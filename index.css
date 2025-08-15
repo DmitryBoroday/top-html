@@ -23,7 +23,7 @@ ul {
 }
 
 body {
-    font-family: 'Comfortaa',sans-serif;
+    font-family: 'Unbounded',sans-serif;
     scroll-behavior: smooth;
     user-select: none;
 }
@@ -52,8 +52,8 @@ header nav ul {
     display: flex;
     justify-content: space-around;
     padding: 1rem 0;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 16px;
+   
 }
 header nav ul a {
     color: black;
@@ -61,21 +61,7 @@ header nav ul a {
 header nav p {
     font-size: 120px;
     font-weight: bold;
-    color: white;
-     text-shadow: 0px 0px 0 rgb(246,246,246),
-                 0px 1px 0 rgb(236,236,236),
-                 0px 2px 0 rgb(227,227,227),
-                 0px 3px 0 rgb(217,217,217),
-                 0px 4px 0 rgb(208,208,208),
-                 0px 5px 0 rgb(199,199,199),
-                 0px 6px 0 rgb(189,189,189),
-                 0px 7px 0 rgb(180,180,180),
-                 0px 8px 0 rgb(170,170,170),
-                 0px 9px 0 rgb(161,161,161),
-                 0px 10px  0 rgb(152,152,152),
-                 0px 11px 10px rgba(181,168,168,0.69),
-                 0px 11px 1px rgba(181,168,168,0.5),
-                 0px 0px 10px rgba(181,168,168,.2);
+    color: black;
 }
 
 
@@ -141,8 +127,7 @@ header nav p {
 }
 .aboutInner article {
     width: 40%;
-    display: flex;
-    align-items: center;
+    
 }
 .aboutInner article a {
     color: black;
@@ -165,53 +150,47 @@ header nav p {
 }
 
 /* HOT DEALS */
-.hotDeals {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+.linkBanner {
     position: relative;
     width: 100%;
     height: 700px;
 }
-.hotDeals a{
-    position: absolute;
-    right: 1rem;
-    bottom: 5rem;
-    color: white;
-    padding: 3rem 1rem;
-}
-.hotDeals a:hover {
-    background-color: black;
-}
-.hotDeals img {
+.linkBanner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(125%);
 }
-.hotDeals article p {
+.linkBanner p {
     font-size: 20px;
     font-weight: bold;
     margin: 1rem;
     color: #ff0404;
     position: absolute;
-    inset: 0;
+    z-index: 40;
 }
-.hotDeals article h2 {
+.linkBanner article {
     position: absolute;
-    top: 8rem;
-    left: 1rem;
+    top: 0;
+    left: 0;
     width: 40%;
-    font-size: 60px;
+    height: 100%;
+    font-size: 40px;
     color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
 }
-.hotDeals article h3 {
-   position: absolute;
-   top: 8rem;
-   right: 1rem;
-   width: 30%;
-   font-size: 26px;
-   color: white;
-   text-align: end;
+.linkBanner article a{
+  color: white;
+  border-bottom: white solid;
+}
+.linkBanner article a:hover {
+    color: black;
+    border-bottom: black solid;
 }
 
 /* POPULAR */
@@ -272,9 +251,9 @@ header nav p {
 @media screen and (max-width: 768px) {
     header nav {
         width: 100%;
-        padding-bottom: 1rem;
+        padding-bottom: 0.4rem;
         align-items: start;
-        padding-left: 1rem;
+        padding-left: 0.2rem;
     }
     header nav ul {
         display: none;
@@ -282,16 +261,6 @@ header nav p {
     }
     header nav p {
         font-size: 40px;
-        text-shadow: 0px 0px 0 rgb(245,245,245),
-                 0px 1px 0 rgb(236,236,236),
-                 0px 2px 0 rgb(226,226,226),
-                 0px 3px 0 rgb(216,216,216),
-                 0px 4px 0 rgb(207,207,207),
-                 0px 5px 0 rgb(197,197,197),
-                 0px 6px  0 rgb(187,187,187),
-                 0px 7px 6px rgba(181,168,168,0.82),
-                 0px 7px 1px rgba(181,168,168,0.5),
-                 0px 0px 6px rgba(181,168,168,.2);
     }
 
 /* HERO */
@@ -352,38 +321,22 @@ header nav p {
 }
 
 /* HOT DEALS */
-.hotDeals {
-    margin-top: 4rem;
-    position: relative;
+.linkBanner {
     width: 100%;
     height: 100%;
 }
-.hotDeals a{
-    position: absolute;
-    right: 1rem;
-    bottom: 5rem;
-    color: black;
+.linkBanner article {
+   width: 100%;
+   padding: 0;
+   justify-content: end;
 }
-.hotDeals a:hover {
-    color: white;
-}
-.hotDeals article {
-    padding: 2rem 1rem;
-}
-.hotDeals article h2 {
-    position: static;
-    font-size: 30px;
-    color: black;
-    width: 90%;
-}
-.hotDeals article h3 {
-    position: static;
+.linkBanner article h2 {
     font-size: 20px;
-    color: black;
     width: 90%;
-    text-align: start;
 }
-
+.linkBanner article a {
+    margin-bottom: 2rem;
+}
 /* SWIPER */
 .swiper-slide img {
       height: 280px;
