@@ -76,9 +76,9 @@ header nav p {
 }
 .hero article h1 {
     font-size: 140px;
-    line-height: 120px;
+    line-height: 130px;
     text-shadow: 1px 2px 4px rgba(0,0,0,0.6);
-    width: 60%;
+    width: 80%;
     text-align: center;
     color: white;
     margin-bottom: 2rem;
