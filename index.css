@@ -4,8 +4,8 @@
 
 
 :root {
-    --primary-color: #ffb909;
-    --link-color: #bc0303;
+    --primary-color: #ff8e38;
+    --link-color: #fb1b1b;
     --text-color: rgb(194, 194, 194);
 }
 
@@ -23,60 +23,93 @@ ul {
 }
 
 body {
-    background-color: black;
     font-family: 'Poiret One',sans-serif;
     scroll-behavior: smooth;
     user-select: none;
-    color: white;
 }
 
 header {
-    position: relative;
     width: 100%;
-    height: 100vh;
-    padding-top: 3rem;
-}
-header nav {
-    background-color: black;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    height: 3rem;
-    width: 100%;
-    box-shadow: 0px 1px 2px 2px rgba(0,0,0);
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border-bottom: solid black; */
 }
-header nav .navInner {
+header nav {
+    top: 0;
+    z-index: 100;
+    height: 100%;
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-header nav .navInner p {
-    font-size: 20px;
+
+header nav ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    font-size: 22px;
     font-weight: bold;
-    background-color: var(--primary-color);
-    color: black;
-    padding: 0 0.2rem 0.2rem 0.2rem;
-    border-radius: 2px;
 }
-header .bg {
+header nav ul a {
+    color: black;
+}
+header nav p {
+    font-size: 120px;
+    font-weight: bold;
+    color: black;
+}
+.hero {
+    position: relative;
+}
+.hero article {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero article h1 {
+    font-size: 140px;
+    line-height: 120px;
+    text-shadow: 1px 2px 4px rgba(0,0,0,0.6);
+    width: 60%;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+.hero article h2 {
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-shadow: 1px 2px 4px rgba(0,0,0,0.6);
+}
+.hero video {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+/* header .bg {
     position: absolute;
     inset: 0;
     background: linear-gradient(270deg,rgba(0, 0, 0, 0.26) 75%, rgba(0, 0, 0, 1) 100%);
     z-index: 30;
     height: 100vh;
     padding-top: 4rem;
-}
-header picture img {
+} */
+/* header picture img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
     filter: brightness(125%);
-}
-header article {
+} */
+/* header article {
     position: absolute;
     left: 6rem;
     bottom: 0;
@@ -88,20 +121,20 @@ header article {
     align-items: start;
     gap: 1rem;
     z-index: 50;
-}
-header article h1 {
+} */
+/* header article h1 {
     text-align: start;
     font-size: 100px;
     line-height: 100px;
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
     text-transform: uppercase;
-}
-header article h2 {
+} */
+/* header article h2 {
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
     font-size: 32px;
     text-transform: uppercase;
-}
-header article a {
+} */
+/* header article a {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -110,7 +143,7 @@ header article a {
     font-weight: bold;
     font-size: 22px;
     background-color: var(--link-color);
-}
+} */
 
 /* Value Section */
 .valueSection {
@@ -228,6 +261,7 @@ header article a {
     font-weight: bold;
     font-size: 28px;
     margin-top: 3rem;
+    margin-bottom: 1rem;
     background-color: var(--link-color);
 }
 
@@ -313,6 +347,7 @@ header article a {
     background-color: var(--link-color);
     font-weight: bold;
     padding: 1rem 2rem;
+    font-size: 28px;
     color: white;
     margin-top: 2rem;
 }
@@ -339,26 +374,39 @@ header article a {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      filter: brightness(150%);
     }
 
 @media screen and (max-width: 768px) {
-    header {
+    header nav {
+        
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    header nav ul {
+        display: none;
+       
+    }
+    header nav p {
+        font-size: 60px;
+    }
+    /* header {
     height: 700px;
-}
-    header picture img {
+} */
+    /* header picture img {
     width: 100%;
     height: 700px;
     object-fit: cover;
-}
-    header .bg {
+} */
+    /* header .bg {
      height: 700px;
      background: linear-gradient(180deg,rgba(0, 0, 0, 0) 54%, rgba(0, 0, 0, 0.26) 66%, rgba(0, 0, 0, 1) 100%);
 
-}
-header nav .navInner {
+} */
+/* header nav .navInner {
     width: 96%;
-}
-    header article {
+} */
+    /* header article {
     position: absolute;
     margin-inline: auto;
     left: 0;
@@ -371,17 +419,39 @@ header nav .navInner {
     align-items: center;
     padding-bottom: 2rem;
     gap: 1rem;
-}
-    header article h1 {
+} */
+    /* header article h1 {
     text-align: center;
     font-size: 50px;
     line-height: normal;
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
-}
-    header article h2 {
+} */
+    /* header article h2 {
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
     font-size: 26px;
     text-align: center;
+} */
+
+/* HERO */
+.hero article {
+    position: static;
+}
+.hero article h1 {
+    font-size: 50px;
+    line-height: 50px;
+    color: black;
+    text-shadow: none;
+    margin-bottom: 0.6rem;
+    width: 98%;
+}
+.hero article h2 {
+    width: 90%;
+    font-size: 20px;
+    color: black;
+    text-shadow: none;
+}
+.hero video {
+    height: 400px;
 }
 
 /* Value Section */
@@ -446,6 +516,9 @@ header nav .navInner {
 }
 
 /* About Link Banner */
+.wideLinkBanner {
+    margin-top: 1rem;
+}
 .wideLinkInner .wideLink p {
     font-size: 40px;
     font-weight: bold;
@@ -486,6 +559,9 @@ header nav .navInner {
     font-weight: lighter;
     width: 96%;
     margin-inline: auto;
+}
+.hotDealsSection a {
+    font-size: 20px;
 }
 
 }
