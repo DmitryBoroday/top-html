@@ -51,11 +51,17 @@ header nav ul {
     display: flex;
     justify-content: space-around;
     padding: 1rem 0;
-    font-size: 16px;
-   
+    font-size: 20px;
+    font-weight: bold;
 }
 header nav ul a {
     color: black;
+    padding-bottom: 0.2rem;
+    padding-inline: 1rem;
+}
+header nav ul a:hover {
+    color: white;
+    background-color: black;
 }
 header nav p {
     font-size: 120px;
@@ -183,11 +189,23 @@ header nav p {
 }
 
 /* Jewelry Video */
+.jewelryVideo {
+    margin: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.jewelryVideo p {
+    font-size: 60px;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
 .jewelryVideo video {
-    width: 100%;
-    height: 700px;
+    width: 80%;
+    height: 600px;
     object-fit: cover;
-    margin-top: 8rem;
 }
 
 /* Black Text */
@@ -287,6 +305,7 @@ header nav p {
 .valueBanner article {
     width: 90%;
     padding: 1.5rem 1rem;
+    text-align: center;
 }
 .valueBanner article h2 {
     font-size: 30px;
@@ -323,10 +342,18 @@ header nav p {
 }
 
 /* Jewelry Video */
-.jewelryVideo video {
-    height: 200px;
-    margin-top: 3rem;
+.jewelryVideo {
+    margin: 4rem 0;
+    height: 300px;
 }
+.jewelryVideo p {
+    font-size: 30px;
+}
+.jewelryVideo video {
+    height: 300px;
+    width: 100%;
+}
+
 
 /* Black Text */
 .blackText {
