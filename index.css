@@ -34,7 +34,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border-bottom: solid black; */
 }
 header nav {
     top: 0;
@@ -64,7 +63,6 @@ header nav p {
     color: black;
 }
 
-
 /* HERO */
 .hero {
     position: relative;
@@ -78,8 +76,8 @@ header nav p {
     justify-content: center;
 }
 .hero article h1 {
-    font-size: 140px;
-    line-height: 130px;
+    font-size: 90px;
+    line-height: 120px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
     width: 80%;
     text-align: center;
@@ -90,66 +88,28 @@ header nav p {
     width: 50%;
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 28px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+.hero a {
+    color: white;
+    font-size: 30px;
+    border-bottom: white solid;
+    margin-top: 2rem;
+}
+.hero a:hover {
+    color: white;
+    font-size: 30px;
+    border-bottom: white solid;
+    margin-top: 2rem;
 }
 .hero video {
     width: 100%;
     height: 800px;
     object-fit: cover;
-    filter: brightness(125%);
 }
 
-/* ABOUT */
-.about {
-    margin-top: 4rem;
-    width: 90%;
-    margin-inline: auto;
-}
-.about p {
-    font-size: 40px;
-    font-weight: bold;
-    margin: 1rem 0;
-}
-.about img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(125%);
-}
-.about .aboutInner {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-.aboutInner picture {
-    width: 60%;
-}
-.aboutInner article {
-    width: 40%;
-    
-}
-.aboutInner article a {
-    color: black;
-    padding: 4rem 1rem;
-}
-.aboutInner article a:hover {
-    color: white;
-    background-color: black;
-}
-.about h2 {
-    font-size: 80px;
-    line-height: 80px;
-    margin-bottom: 1rem;
-}
-.about h3 {
-    font-size: 30px;
-    width: 80%;
-    display: flex;
-    align-items: center;
-}
-
-/* HOT DEALS */
+/* Link Banner */
 .linkBanner {
     position: relative;
     width: 100%;
@@ -183,6 +143,7 @@ header nav p {
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 }
 .linkBanner article a{
   color: white;
@@ -193,36 +154,97 @@ header nav p {
     border-bottom: black solid;
 }
 
-/* POPULAR */
-.popular {
-    margin: 4rem 0;
+/* Value Banner */
+.valueBanner {
+    background: black;
+    height: 500px;
     width: 90%;
-    margin-inline: auto;
-}
-.popularInner {
+    margin: 6rem auto;
     display: flex;
-    align-items: center;
-    background-color: black;
 }
-.popular img {
+.valueBanner picture {
+    height: 100%;
+    width: 50%;
+}
+.valueBanner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(125%);
 }
-.popularInner picture {
-    width: 60%;
-}
-.popularInner article {
-    width: 40%;
+.valueBanner article {
+    height: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+.valueBanner article h2 {
+    font-size: 40px;
+
+}
+.valueBanner article h3 {
+    font-size: 38px;
 }
 
-/* SWIPER */
+/* Authority Indepth Section */
+.inDeepBanner {
+    width: 98%;
+    height: 100%;
+    background-color: rgb(255, 89, 0);
+    margin: 6rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inDeepBanner article {
+    width: 90%;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+.inDeepBanner article h2 {
+    font-size: 40px;
+}
+.inDeepBanner article h3 {
+    font-size: 36px;
+}
 
+/* Indeep Video */
+.inDeepVideo {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 80%;
+    margin: 4rem auto;
+}
+.inDeepVideo video {
+    width: 25%;
+   
+}
+.inDeepVideo article {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+.inDeepVideo article h2 {
+    font-size: 40px;
+}
+.inDeepVideo article h3 {
+    font-size: 36px;
+}
+
+
+/* SWIPER */
 .swiper {
       width: 100%;
       height: 100%;
@@ -251,76 +273,93 @@ header nav p {
 @media screen and (max-width: 768px) {
     header nav {
         width: 100%;
-        padding-bottom: 0.4rem;
-        align-items: start;
-        padding-left: 0.2rem;
+        padding: 2rem 0;
     }
     header nav ul {
         display: none;
-       
     }
     header nav p {
-        font-size: 40px;
+        font-size: 20px;
     }
 
 /* HERO */
 .hero article {
     position: static;
-    text-transform: uppercase;
     margin-top: 1rem;
 }
 .hero article h1 {
-    font-size: 40px;
+    font-size: 30px;
     line-height: normal;
     color: black;
     text-shadow: none;
     margin-bottom: 0.6rem;
     width: 90%;
-    text-align: start;
+    
 }
 .hero article h2 {
     width: 90%;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     text-shadow: none;
-    text-align: start;
+}
+.hero article a {
+    color: black;
+    border-bottom: black solid;
 }
 .hero video {
     height: 280px;
+    filter: brightness(125%);
 }
 
-/* ABOUT */
-.about {
+/* Value Banner */
+.valueBanner {
+    height: 100%;
     width: 100%;
-    margin-top: 2rem;
-}
-.about p {
-    font-size: 30px;
-    margin: 1rem;
-}
-.about .aboutInner {
-    display: flex;
+    margin: 3rem 0;
     flex-direction: column;
 }
-.aboutInner picture {
+.valueBanner picture {
     width: 100%;
 }
-.about .aboutInner a {
-    padding-right: 0.4rem;
+.valueBanner img {
+    width: 100%;
 }
-.aboutInner article {
+.valueBanner article {
     width: 90%;
+    padding: 1.5rem 1rem;
 }
-.about h2 {
+.valueBanner article h2 {
     font-size: 30px;
-    line-height: normal;
-    text-transform: uppercase;
+
 }
-.about h3 {
-    font-size: 20px;
+.valueBanner article h3 {
+    font-size: 28px;
 }
 
-/* HOT DEALS */
+/* Authority Indepth Section */
+.inDeepBanner {
+    height: 100%;
+    width: 100%;
+    margin: 3rem 0;
+}
+.inDeepBanner picture {
+    height: 100%;
+    width: 90%;
+    padding: 1rem;
+}
+.inDeepBanner article {
+    width: 90%;
+     text-align: justify;
+}
+.inDeepBanner article h2 {
+    font-size: 30px;
+}
+.inDeepBanner article h3 {
+    font-size: 26px;
+}
+
+
+/* Link Banner */
 .linkBanner {
     width: 100%;
     height: 100%;
@@ -337,10 +376,34 @@ header nav p {
 .linkBanner article a {
     margin-bottom: 2rem;
 }
+
+/* Indeep Video */
+.inDeepVideo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inDeepVideo video {
+    width: 100%;
+   height: 300px;
+   object-fit: cover;
+}
+.inDeepVideo article {
+    width: 90%;
+    padding: 1rem;
+    text-align: justify;
+}
+.inDeepVideo article h2 {
+    font-size: 30px;
+}
+.inDeepVideo article h3 {
+    font-size: 26px;
+}
+
+
 /* SWIPER */
 .swiper-slide img {
       height: 280px;
     }
-
 
 }
