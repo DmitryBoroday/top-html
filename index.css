@@ -74,10 +74,11 @@ header nav p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 }
 .hero article h1 {
-    font-size: 160px;
-    line-height: 160px;
+    font-size: 90px;
+    line-height: 120px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
     width: 80%;
     text-align: center;
@@ -109,30 +110,56 @@ header nav p {
     object-fit: cover;
 }
 
+/* Value Banner Blue*/
+.valueBanner {
+    background: rgb(27, 48, 60);
+    height: 100%;
+    width: 90%;
+    margin: 3rem 2rem 7rem 1rem;
+    display: flex;
+}
+.valueBanner article {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem;
+    color: white;
+    text-align: start;
+}
+.valueBanner article h2 {
+    font-size: 40px;
+}
+.valueBanner article h3 {
+    font-size: 38px;
+}
+
+
 /* Link Banner */
 .linkBanner {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 100%;
 }
 .linkBanner img {
     width: 100%;
-    height: 100%;
+    height: 700px;
     object-fit: cover;
     filter: brightness(125%);
 }
 .linkBanner p {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
-    margin: 1rem;
-    color: #ff0404;
-    position: absolute;
+    margin: 3rem 1rem;
+    color: black;
     z-index: 40;
 }
 .linkBanner article {
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 2rem;
+    bottom: 4rem;
     width: 40%;
     height: 100%;
     font-size: 40px;
@@ -140,121 +167,40 @@ header nav p {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
+    justify-content: end;
+    align-items: start;
+    text-align: start;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 }
 .linkBanner article a{
   color: white;
   border-bottom: white solid;
+  font-weight: bold;
 }
 .linkBanner article a:hover {
     color: black;
     border-bottom: black solid;
 }
 
-/* Value Banner Blue*/
-.valueBanner {
-    background: black;
-    height: 500px;
-    width: 90%;
-    margin: 6rem auto;
-    display: flex;
-}
-.valueBanner picture {
-    height: 100%;
-    width: 50%;
-}
-.valueBanner img {
+/* Jewelry Video */
+.jewelryVideo video {
     width: 100%;
-    height: 100%;
+    height: 700px;
     object-fit: cover;
-    filter: brightness(125%);
-}
-.valueBanner article {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    color: white;
-    text-align: center;
-}
-.valueBanner article h2 {
-    font-size: 40px;
-
-}
-.valueBanner article h3 {
-    font-size: 38px;
-}
-
-/* Authority Indepth Section Orange */
-.inDeepBanner {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(255, 72, 26);
-    margin: 8rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inDeepBanner article {
-    width: 90%;
-    padding: 2rem;
-    color: white;
-    text-align: center;
-}
-.inDeepBanner article h2 {
-    font-size: 40px;
-}
-.inDeepBanner article h3 {
-    font-size: 36px;
-}
-
-/*Authority Indeep Yellow */
-.inDeepVideo {
-    display: flex;
-    background-color: black;
-    color: white;
-    width: 80%;
-    height: 600px;
-    margin: 4rem auto;
-}
-.inDeepVideo video {
-    width: 25%;
-   object-fit: cover;
-}
-.inDeepVideo article {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    text-align: center;
-}
-.inDeepVideo article h2 {
-    font-size: 40px;
-}
-.inDeepVideo article h3 {
-    font-size: 36px;
+    margin-top: 8rem;
 }
 
 /* Black Text */
 .blackText {
   width: 80%;
-  margin: 6rem auto;
+  margin: 8rem auto;
   text-align: center;
 }
 .blackText article h2 {
     font-size: 60px;
 }
 .blackText article h3 {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 
@@ -350,85 +296,49 @@ header nav p {
     font-size: 28px;
 }
 
-/* Authority Indepth Section Orange */
-.inDeepBanner {
-    height: 100%;
-    width: 100%;
-    margin: 3rem 0;
-    flex-direction: column;
-}
-.inDeepBanner video {
-   width: 100%;
-   height: 300px;
-   object-fit: cover;
-}
-
-.inDeepBanner article {
-    width: 90%;
-    padding: 1rem;
-    text-align: start;
-}
-.inDeepBanner article h2 {
-    font-size: 24px;
-}
-.inDeepBanner article h3 {
-    font-size: 22px;
-}
-
 
 /* Link Banner */
 .linkBanner {
     width: 100%;
     height: 100%;
 }
+.linkBanner img {
+    height: 400px;
+}
 .linkBanner article {
-   width: 100%;
-   padding: 0;
-   justify-content: end;
+   width: 90%;
+   bottom: 0rem;
+   left: 0.5rem;
 }
 .linkBanner article h2 {
-    font-size: 20px;
+    font-size: 30px;
     width: 90%;
 }
 .linkBanner article a {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
-
-/* Indeep Video Yellow*/
-.inDeepVideo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-.inDeepVideo video {
-    width: 100%;
-   height: 300px;
-   object-fit: cover;
-}
-.inDeepVideo article {
-    width: 90%;
-    padding: 1rem;
-    text-align: start;
-}
-.inDeepVideo article h2 {
+.linkBanner  p {
+    margin: 1rem 1rem;
     font-size: 30px;
 }
-.inDeepVideo article h3 {
-    font-size: 26px;
+
+/* Jewelry Video */
+.jewelryVideo video {
+    height: 200px;
+    margin-top: 3rem;
 }
 
 /* Black Text */
 .blackText {
   width: 90%;
-  margin: 3rem auto;
+  margin: 4rem auto;
   text-align: center;
 }
 .blackText article h2 {
-    font-size: 24px;
+    font-size: 32px;
 }
 .blackText article h3 {
-    font-size: 20px;
+    font-size: 28px;
 }
 
 
