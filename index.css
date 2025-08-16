@@ -23,7 +23,7 @@ ul {
 }
 
 body {
-    font-family: 'Unbounded',sans-serif;
+    font-family: 'Poiret One',sans-serif;
     scroll-behavior: smooth;
     user-select: none;
 }
@@ -76,8 +76,8 @@ header nav p {
     justify-content: center;
 }
 .hero article h1 {
-    font-size: 90px;
-    line-height: 120px;
+    font-size: 160px;
+    line-height: 160px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
     width: 80%;
     text-align: center;
@@ -193,21 +193,17 @@ header nav p {
 
 /* Authority Indepth Section Orange */
 .inDeepBanner {
-    width: 80%;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     background-color: rgb(255, 72, 26);
-    margin: 4rem auto;
+    margin: 8rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.inDeepBanner video {
-   width: 25%;
-   object-fit: cover;
-   filter: brightness(125%);
-}
+
 .inDeepBanner article {
-    width: 75%;
+    width: 90%;
     padding: 2rem;
     color: white;
     text-align: center;
