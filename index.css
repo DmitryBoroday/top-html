@@ -221,6 +221,29 @@ header nav p {
     font-size: 50px;
 }
 
+/* Whtie On Black Text */
+.whiteBlack {
+    color: white;
+    background-color: black;
+    padding: 2rem;
+    margin: 4rem 0;
+    text-align: center;
+}
+.whiteBlack h2 {
+    font-size: 60px;
+}
+.whiteBlack h3 {
+    font-size: 56px;
+}
+.whiteBlack span a {
+    color: white;
+    margin-inline: 1.3rem;
+    border-bottom: white solid;
+}
+.whiteBlack span a:hover {
+    color: rgb(190, 190, 190);
+    border-bottom: rgb(190, 190, 190) solid;
+}
 
 /* SWIPER */
 .swiper {
@@ -257,7 +280,7 @@ header nav p {
         display: none;
     }
     header nav p {
-        font-size: 20px;
+        font-size: 30px;
     }
 
 /* HERO */
@@ -368,6 +391,12 @@ header nav p {
     font-size: 28px;
 }
 
+.whiteBlack h2 {
+    font-size: 30px;
+}
+.whiteBlack h3 {
+    font-size: 26px;
+}
 
 /* SWIPER */
 .swiper-slide img {
