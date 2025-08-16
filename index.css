@@ -195,7 +195,7 @@ header nav p {
 .inDeepBanner {
     width: 80%;
     height: 600px;
-    background-color: rgb(255, 113, 4);
+    background-color: rgb(255, 72, 26);
     margin: 4rem auto;
     display: flex;
     justify-content: center;
@@ -219,7 +219,7 @@ header nav p {
     font-size: 36px;
 }
 
-/* Indeep Video */
+/*Authority Indeep Yellow */
 .inDeepVideo {
     display: flex;
     background-color: black;
@@ -246,6 +246,19 @@ header nav p {
 }
 .inDeepVideo article h3 {
     font-size: 36px;
+}
+
+/* Black Text */
+.blackText {
+  width: 80%;
+  margin: 6rem auto;
+  text-align: center;
+}
+.blackText article h2 {
+    font-size: 60px;
+}
+.blackText article h3 {
+    font-size: 40px;
 }
 
 
@@ -357,7 +370,7 @@ header nav p {
 .inDeepBanner article {
     width: 90%;
     padding: 1rem;
-    text-align: justify;
+    text-align: start;
 }
 .inDeepBanner article h2 {
     font-size: 24px;
@@ -400,13 +413,26 @@ header nav p {
 .inDeepVideo article {
     width: 90%;
     padding: 1rem;
-    text-align: justify;
+    text-align: start;
 }
 .inDeepVideo article h2 {
     font-size: 30px;
 }
 .inDeepVideo article h3 {
     font-size: 26px;
+}
+
+/* Black Text */
+.blackText {
+  width: 90%;
+  margin: 3rem auto;
+  text-align: center;
+}
+.blackText article h2 {
+    font-size: 24px;
+}
+.blackText article h3 {
+    font-size: 20px;
 }
 
 
