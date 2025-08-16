@@ -98,9 +98,9 @@ header nav p {
     margin-top: 2rem;
 }
 .hero a:hover {
-    color: white;
+    color: black;
     font-size: 30px;
-    border-bottom: white solid;
+    border-bottom: black solid;
     margin-top: 2rem;
 }
 .hero video {
@@ -154,7 +154,7 @@ header nav p {
     border-bottom: black solid;
 }
 
-/* Value Banner */
+/* Value Banner Blue*/
 .valueBanner {
     background: black;
     height: 500px;
@@ -191,19 +191,23 @@ header nav p {
     font-size: 38px;
 }
 
-/* Authority Indepth Section */
+/* Authority Indepth Section Orange */
 .inDeepBanner {
-    width: 98%;
-    height: 100%;
-    background-color: rgb(255, 89, 0);
-    margin: 6rem auto;
+    width: 80%;
+    height: 600px;
+    background-color: rgb(255, 113, 4);
+    margin: 4rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
+.inDeepBanner video {
+   width: 25%;
+   object-fit: cover;
+   filter: brightness(125%);
 }
 .inDeepBanner article {
-    width: 90%;
+    width: 75%;
     padding: 2rem;
     color: white;
     text-align: center;
@@ -221,11 +225,12 @@ header nav p {
     background-color: black;
     color: white;
     width: 80%;
+    height: 600px;
     margin: 4rem auto;
 }
 .inDeepVideo video {
     width: 25%;
-   
+   object-fit: cover;
 }
 .inDeepVideo article {
     width: 75%;
@@ -311,7 +316,7 @@ header nav p {
     filter: brightness(125%);
 }
 
-/* Value Banner */
+/* Value Banner Blue*/
 .valueBanner {
     height: 100%;
     width: 100%;
@@ -336,26 +341,29 @@ header nav p {
     font-size: 28px;
 }
 
-/* Authority Indepth Section */
+/* Authority Indepth Section Orange */
 .inDeepBanner {
     height: 100%;
     width: 100%;
     margin: 3rem 0;
+    flex-direction: column;
 }
-.inDeepBanner picture {
-    height: 100%;
-    width: 90%;
-    padding: 1rem;
+.inDeepBanner video {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
 }
+
 .inDeepBanner article {
     width: 90%;
-     text-align: justify;
+    padding: 1rem;
+    text-align: justify;
 }
 .inDeepBanner article h2 {
-    font-size: 30px;
+    font-size: 24px;
 }
 .inDeepBanner article h3 {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 
@@ -377,11 +385,12 @@ header nav p {
     margin-bottom: 2rem;
 }
 
-/* Indeep Video */
+/* Indeep Video Yellow*/
 .inDeepVideo {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
 }
 .inDeepVideo video {
     width: 100%;
