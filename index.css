@@ -114,6 +114,7 @@ header nav p {
     width: 100%;
     height: 800px;
     object-fit: cover;
+    background-color: black;
 }
 
 /* Value Banner Blue*/
@@ -122,18 +123,10 @@ header nav p {
     height: 100%;
     width: 90%;
     margin: 3rem 2rem 7rem 1rem;
-    display: flex;
 }
 .valueBanner article {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
     padding: 2rem;
     color: white;
-    text-align: start;
 }
 .valueBanner article h2 {
     font-size: 40px;
@@ -190,6 +183,7 @@ header nav p {
 
 /* Jewelry Video */
 .jewelryVideo {
+    background-color: black;
     margin: 8rem 0;
     display: flex;
     flex-direction: column;
@@ -212,7 +206,6 @@ header nav p {
 .blackText {
   width: 80%;
   margin: 8rem auto;
-  text-align: center;
 }
 .blackText article h2 {
     font-size: 60px;
@@ -227,7 +220,6 @@ header nav p {
     background-color: black;
     padding: 2rem;
     margin: 4rem 0;
-    text-align: center;
 }
 .whiteBlack h2 {
     font-size: 60px;
@@ -314,28 +306,14 @@ header nav p {
 
 /* Value Banner Blue*/
 .valueBanner {
-    height: 100%;
-    width: 100%;
     margin: 3rem 0;
-    flex-direction: column;
-}
-.valueBanner picture {
     width: 100%;
-}
-.valueBanner img {
-    width: 100%;
-}
-.valueBanner article {
-    width: 90%;
-    padding: 1.5rem 1rem;
-    text-align: center;
 }
 .valueBanner article h2 {
-    font-size: 30px;
-
+    font-size: 24px;
 }
 .valueBanner article h3 {
-    font-size: 28px;
+    font-size: 22px;
 }
 
 
@@ -382,13 +360,12 @@ header nav p {
 .blackText {
   width: 90%;
   margin: 4rem auto;
-  text-align: center;
 }
 .blackText article h2 {
-    font-size: 32px;
+    font-size: 28px;
 }
 .blackText article h3 {
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .whiteBlack h2 {

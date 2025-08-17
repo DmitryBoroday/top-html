@@ -24,8 +24,19 @@
     <meta name='theme-color' content='#000000'>
 </head>
 <body>
-    <header>
-        <video  
+    <!-- <header>
+        <span></span>
+    </header> -->
+    <!-- <h1>Популярные страны для эскорта</h1>
+    <h2>
+        Сопровождение клиентов на светских раутах, развлечения,
+        эксклюзивные вечеринки на яхте в Сен-Тропе, роскошные выходные в
+        Милане, Париже или Лондоне - все это ты сможешь получить, работая
+        с одним из наших эскорт-агентств
+    </h2> -->
+    <div class='videoBg'>
+      <div class='videoFilter'></div>
+      <video 
              loop 
              autoPlay 
              muted 
@@ -33,43 +44,10 @@
              preload='auto' 
              width='100%' 
              height='100%'
-             poster='../assets/videos/popPoster.avif'>
-            <source 
-             src='../assets/videos/popDesk.mp4' 
-             type='video/mp4' 
-             media='(max-width:480px)'
-             >
-            </source>
+             poster='../assets/videos/boatPoster.avif'>
             <source src='../assets/videos/popDesk.mp4' type='video/mp4'>
             </source>
-        </video>
-        <article>
-            <div class='bg'></div>
-            <picture>
-               <source
-                media='(min-width: 768px)'
-                srcSet='/assets/images/hero/popDesk.avif'
-               />
-               <img
-                title=''
-                src='/assets/images/hero/popMob.avif'
-                alt=''
-                width={400}
-                height={900}
-                loading='eager'
-                fetchPriority='high'
-                />
-            </picture>
-            <div class='articleContent'>
-             <h1>Популярные страны для эскорта</h1>
-            <h2>
-                Сопровождение клиентов на светских раутах, развлечения,
-                эксклюзивные вечеринки на яхте в Сен-Тропе, роскошные выходные в
-                 Милане, Париже или Лондоне - все это ты сможешь получить, работая
-             с одним из наших эскорт-агентств
-            </h2>
-            </div>
-        </article>
-    </header>
+      </video>
+    </div>
 </body>
 </html>
