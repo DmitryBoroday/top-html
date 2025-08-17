@@ -21,9 +21,6 @@ a {
 ul {
     list-style: none;
 }
-html {
-    scroll-behavior: smooth;
-}
 body {
     font-family: 'Poiret One',sans-serif;
     user-select: none;
@@ -35,11 +32,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-header .headerBg {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 87%, rgba(0, 0, 0, 1) 100%);
 }
 header video {
     width: 100%;
@@ -53,88 +45,36 @@ header .logo {
     font-weight: bold;
     color: white;
 }
-header a span {
-    background-color: #ff8e38;
-    color: black;
-    padding-left: 0.4rem;
-}
 header nav {
     position: absolute;
-    width: 100%;
     top: 4rem;
+    width: 100%;
+    z-index: 40;
 }
 header nav ul {
     display: flex;
     justify-content: space-around;
-    gap: 4rem;
-}
-header nav a {
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-}
-header nav a:hover {
-    color: rgb(200, 200, 200);
-} 
-header article {
-    position: absolute;
-    bottom: 4rem;
-    left: 4rem;
-    color: white;
-}
-header article h1 {
-    font-size: 30px;
-    margin-bottom: 0.5rem;
-}
-header article h2 {
-    font-size: 20px;
-}
-header .menu span {
-    position: absolute;
-    color: white;
-    right: 2rem;
-    top: 2rem;
-    opacity: 0;
-}
-
-
-/* header nav {
-    top: 0;
-    z-index: 100;
-    height: 100%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* header nav ul {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem 0;
-    font-size: 20px;
-    font-weight: bold;
 }
 header nav ul a {
-    color: black;
-    padding-bottom: 0.2rem;
-    padding-inline: 1rem;
-}
-header nav ul a:hover {
     color: white;
-    background-color: black;
-}
-header nav p {
-    font-size: 120px;
+    font-size: 18px;
     font-weight: bold;
-    color: black;
 }
-header nav p span {
-    background-color: #ff8e38;
-    padding-left: 0.5rem;
-} */
+header article {
+    position: absolute;
+    left: 4rem;
+    bottom: 4rem;
+    color: white;
+}
+header .menu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: white;
+    display: none;
+}
+
+/* Footer */
 
 footer {
     background-color: black;
@@ -363,27 +303,30 @@ footer .copyright p {
     header .logo {
         font-size: 80px;
     }
+    header .logo span{
+        background-color: #ff8e38;
+        color: black;
+        padding-left: 1rem;
+    }
     header nav {
+        width: 100%;
+        padding: 2rem 0;
+    }
+    header nav ul {
         display: none;
     }
+    header nav p {
+        font-size: 40px;
+    }
     header article {
-        bottom: 1rem;
-        left: 1rem;
-        padding-right: 0.1rem;
-    }
-    header article h1 {
-        margin-bottom: 0.4rem;
-    }
-    header article h2 {
-        font-size: 16px;
-    }
-    header .menu span {
-   
-    opacity: 1;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    color: white;
 }
-
+    header .menu {    
+    display: block;
 }
-
 
     /* Footer */
     footer ul {
@@ -501,3 +444,4 @@ footer .copyright p {
       height: 280px;
     }
 
+}
