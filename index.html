@@ -31,7 +31,35 @@
 </head>
 <body>
     <header>
+        <div class='headerBg'></div>
+        <video 
+             loop 
+             autoPlay 
+             muted 
+             playsInline 
+             preload='auto' 
+             width='100%' 
+             height='100%'
+             poster='../assets/videos/boatPoster.avif'>
+            <source src='../assets/videos/flower.mp4' type='video/mp4' media='(max-width:480px)'>
+            </source>
+            <source src='../assets/videos/silDesk.mp4' type='video/mp4'>
+            <script>
+                document.querySelector('video').playbackRate = 2.5
+            </script>
+            </source>
+        </video>
+        <div class='logo'><span>top</span>escort</div>
         <nav>
+          <ul>
+            <a href='/hot-deals.html'>Горячие вакансии</a>
+            <a href='/popular-countries.html'>Популярные страны</a>
+            <a href='/all-countries.html'>Весь мир</a>
+            <a href='/sex-tours.html'>Прибыльные туры</a>
+            <a href='/blog.html'>Наш блог</a>
+          </ul>
+        </nav>
+        <!-- <nav>
              <p onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
                 <span>top</span>escort
              </p>
@@ -42,12 +70,12 @@
             <a href='/sex-tours.html'>Прибыльные туры</a>
             <a href='/blog.html'>Наш блог</a>
         </ul>
-        </nav>
+        </nav> -->
     </header>
     
     <main>
         <!-- Hero All Countries Link-->
-        <section class='hero'>
+        <!-- <section class='hero'>
             <video 
              loop 
              autoPlay 
@@ -57,7 +85,7 @@
              width='100%' 
              height='100%'
              poster='../assets/videos/boatPoster.avif'>
-            <source src='../assets/videos/boatMob.mp4' type='video/mp4' media='(max-width:480px)'>
+            <source src='../assets/videos/flower.mp4' type='video/mp4' media='(max-width:480px)'>
             </source>
             <source src='../assets/videos/boatDesk.mp4' type='video/mp4'>
             </source>
@@ -67,7 +95,7 @@
                <h2>БЫСТРЫЙ И УДОБНЫЙ ПОИСК ЭСКОРТ ВАКАНСИЙ ОТ ЛУЧШИХ АГЕНТСТВ В ЛЮБОЙ ТОЧКЕ МИРА</h2>
                <a href='all-countries.html'>Выбери агентство</a>
             </article>
-        </section>
+        </section> -->
 
         <!-- Value Banner Blue-->
          <section class='valueBanner'>
@@ -243,8 +271,9 @@
         <p>No intimate services</p>
       </div>
     </footer>
+     
+    
 
-      
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
