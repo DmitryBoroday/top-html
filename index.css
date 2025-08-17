@@ -21,13 +21,12 @@ a {
 ul {
     list-style: none;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poiret One',sans-serif;
-    scroll-behavior: smooth;
     user-select: none;
-    background-color: black;
-    color: white;
 }
 
 /* Header */
@@ -51,12 +50,8 @@ header .logo {
     position: absolute;
     font-size: 260px;
     cursor: pointer;
-}
-header .logo span {
-    background-color: #ff8e38;
-    color: black;
     font-weight: bold;
-    padding-left: 1rem;
+    color: white;
 }
 header nav {
     position: absolute;
@@ -71,11 +66,31 @@ header nav ul {
 header nav a {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 header nav a:hover {
     color: rgb(200, 200, 200);
 } 
+header article {
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+    color: white;
+}
+header article h1 {
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+}
+header article h2 {
+    font-size: 20px;
+}
+header span {
+    position: absolute;
+    color: white;
+    right: 2rem;
+    top: 2rem;
+    opacity: 0;
+}
 
 
 /* header nav {
@@ -342,24 +357,26 @@ footer .copyright p {
 @media screen and (max-width: 768px) {
     header .logo {
         font-size: 80px;
-        background-color: black;
-        font-weight: bold;
-    }
-    header .logo span{
-        background-color: #ff8e38;
-        color: black;
-        padding-left: 1rem;
     }
     header nav {
-        width: 100%;
-        padding: 2rem 0;
-    }
-    header nav ul {
         display: none;
     }
-    header nav p {
-        font-size: 40px;
+    header article {
+    bottom: 1rem;
+    left: 1rem;
     }
+    header article h1 {
+        margin-bottom: 0.4rem;
+    }
+    header article h2 {
+        font-size: 16px;
+    }
+    header span {
+        right: 2rem;
+        top: 2rem;
+        opacity: 1;
+}
+
 
     /* Footer */
     footer ul {
