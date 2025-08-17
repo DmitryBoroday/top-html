@@ -45,6 +45,11 @@ header .logo {
     font-weight: bold;
     color: white;
 }
+ header .logo span{
+        background-color: #ff9544;
+        color: black;
+        padding-left: 1rem;
+    }
 header nav {
     position: absolute;
     top: 4rem;
@@ -60,11 +65,18 @@ header nav ul a {
     font-size: 18px;
     font-weight: bold;
 }
+header nav ul a:hover {
+    color: rgb(175, 175, 175);
+}
 header article {
     position: absolute;
     left: 4rem;
     bottom: 4rem;
     color: white;
+}
+header article h1 {
+    font-size: 40px;
+    margin-bottom: 0.6rem;
 }
 header .menu {
     position: absolute;
@@ -107,57 +119,11 @@ footer .copyright p {
     font-size: 10px;
 }
 
-/* HERO */
-.hero {
-    position: relative;
-}
-.hero article {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
-.hero article h1 {
-    font-size: 120px;
-    line-height: 120px;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-    width: 80%;
-    text-align: center;
-    color: white;
-    margin-bottom: 2rem;
-}
-.hero article h2 {
-    width: 50%;
-    text-align: center;
-    color: white;
-    font-size: 28px;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-}
-.hero a {
-    color: white;
-    font-size: 30px;
-    border-bottom: white solid;
-    margin-top: 2rem;
-}
-.hero a:hover {
-    color: black;
-    font-size: 30px;
-    border-bottom: black solid;
-    margin-top: 2rem;
-}
-.hero video {
-    width: 100%;
-    height: 800px;
-    object-fit: cover;
-    background-color: black;
-}
+
 
 /* Value Banner Blue*/
 .valueBanner {
-    background: rgb(27, 48, 60);
+    background: rgb(0, 0, 0);
     height: 100%;
     width: 90%;
     margin: 3rem 2rem 7rem 1rem;
@@ -303,10 +269,10 @@ footer .copyright p {
     header .logo {
         font-size: 80px;
     }
-    header .logo span{
-        background-color: #ff8e38;
-        color: black;
-        padding-left: 1rem;
+    header .bg {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 20%);
     }
     header nav {
         width: 100%;
@@ -323,7 +289,13 @@ footer .copyright p {
     left: 1rem;
     bottom: 1rem;
     color: white;
-}
+    }
+    header article h1 {
+        font-size: 30px;
+    }
+    header article h2 {
+        font-size: 20px;
+    }
     header .menu {    
     display: block;
 }
@@ -414,7 +386,7 @@ footer .copyright p {
     font-size: 30px;
 }
 .jewelryVideo video {
-    height: 300px;
+    height: 220px;
     width: 100%;
 }
 

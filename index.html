@@ -31,7 +31,7 @@
 </head>
 <body>
     <header>
-        <!-- <div class='headerBg'></div> -->
+        <div class='bg'></div>
         <video 
              loop 
              autoPlay 
@@ -40,7 +40,7 @@
              preload='auto' 
              width='100%' 
              height='100%'
-             poster='../assets/videos/boatPoster.avif'>
+             poster='../assets/videos/heroPoster.avif'>
             <source src='../assets/videos/heroMob.mp4' type='video/mp4' media='(max-width:480px)'>
             </source>
             <source src='../assets/videos/silDesk.mp4' type='video/mp4'>
@@ -49,7 +49,7 @@
             </script>
             </source>
         </video>
-        <a  class='logo'><span>top</span>escort</a>
+        <a onclick='window.scrollTo({top: 900, behavior: "smooth"});'  class='logo'><span>top</span>escort</a>
         <nav>
           <ul>
             <a href='/hot-deals.html'>Горячие вакансии</a>
@@ -118,6 +118,25 @@
                 <a href='hot-deals.html'>Выбери вакансию</a>
             </article>
          </section>
+         
+         <!-- Boat Party Video -->
+         <section class='jewelryVideo'>
+            <p>Call To Action Text</p>
+            <video 
+             loop 
+             autoPlay 
+             muted 
+             playsInline 
+             preload='auto' 
+             width='100%' 
+             height='100%'
+             poster='../assets/videos/boatPoster.avif'>
+            <source src='../assets/videos/boatMob.mp4' type='video/mp4' media='(max-width:480px)'>
+            </source>
+            <source src='../assets/videos/boatDesk.mp4' type='video/mp4'>
+            </source>
+            </video>
+          </section>
 
           <!-- Indepth Authority Black Text -->
           <section class='blackText'>
