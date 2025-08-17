@@ -53,6 +53,11 @@ header .logo {
     font-weight: bold;
     color: white;
 }
+header a span {
+    background-color: #ff8e38;
+    color: black;
+    padding-left: 0.4rem;
+}
 header nav {
     position: absolute;
     width: 100%;
@@ -84,7 +89,7 @@ header article h1 {
 header article h2 {
     font-size: 20px;
 }
-header span {
+header .menu span {
     position: absolute;
     color: white;
     right: 2rem;
@@ -362,8 +367,9 @@ footer .copyright p {
         display: none;
     }
     header article {
-    bottom: 1rem;
-    left: 1rem;
+        bottom: 1rem;
+        left: 1rem;
+        padding-right: 0.1rem;
     }
     header article h1 {
         margin-bottom: 0.4rem;
@@ -371,10 +377,11 @@ footer .copyright p {
     header article h2 {
         font-size: 16px;
     }
-    header span {
-        right: 2rem;
-        top: 2rem;
-        opacity: 1;
+    header .menu span {
+   
+    opacity: 1;
+}
+
 }
 
 
@@ -494,4 +501,3 @@ footer .copyright p {
       height: 280px;
     }
 
-}
