@@ -26,6 +26,7 @@ body {
     font-family: 'Poiret One',sans-serif;
     scroll-behavior: smooth;
     user-select: none;
+    /* background-color: black; */
 }
 
 header {
@@ -68,6 +69,41 @@ header nav p {
     font-weight: bold;
     color: black;
 }
+header nav p span {
+    background-color: #ff8e38;
+    padding-left: 0.5rem;
+}
+
+footer {
+    background-color: black;
+    padding: 4rem 1rem 1rem 1rem;
+    
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+footer ul a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+footer ul a:hover {
+    color: rgb(176, 176, 176);
+    padding-bottom: 1rem;
+}
+footer .copyright {
+    color: white;
+    margin-top: 2rem;
+    border-top: 1px solid rgb(84, 84, 84);
+    padding-top: 1rem;
+}
+footer .copyright span {
+    font-weight: bold;
+}
+footer .copyright p {
+    font-size: 10px;
+}
 
 /* HERO */
 .hero {
@@ -83,7 +119,7 @@ header nav p {
     font-weight: bold;
 }
 .hero article h1 {
-    font-size: 90px;
+    font-size: 120px;
     line-height: 120px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
     width: 80%;
@@ -175,6 +211,7 @@ header nav p {
   color: white;
   border-bottom: white solid;
   font-weight: bold;
+  margin-top: 2rem;
 }
 .linkBanner article a:hover {
     color: black;
@@ -269,8 +306,15 @@ header nav p {
         display: none;
     }
     header nav p {
-        font-size: 20px;
+        font-size: 40px;
     }
+
+    /* Footer */
+    footer ul {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
 
 /* HERO */
 .hero article {
@@ -278,7 +322,7 @@ header nav p {
     margin-top: 1rem;
 }
 .hero article h1 {
-    font-size: 30px;
+    font-size: 40px;
     line-height: normal;
     color: black;
     text-shadow: none;
@@ -288,14 +332,14 @@ header nav p {
 }
 .hero article h2 {
     width: 90%;
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     text-shadow: none;
 }
 .hero article a {
     color: black;
     border-bottom: black solid;
-    font-size: 20px;
+    
 }
 .hero video {
     height: 280px;
@@ -329,15 +373,17 @@ header nav p {
    left: 0.5rem;
 }
 .linkBanner article h2 {
-    font-size: 30px;
+    font-size: 40px;
     width: 90%;
 }
 .linkBanner article a {
     margin-bottom: 1rem;
+    font-size: 26px;
+    margin-top: 1rem;
 }
 .linkBanner  p {
     margin: 1rem 1rem;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* Jewelry Video */
