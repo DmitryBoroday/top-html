@@ -126,6 +126,7 @@ nav ul a:hover {
     /* Countries Nav */
     nav ul {
         padding: 1rem;
+        text-align: center;
     }
     nav ul a {
         color: black;
