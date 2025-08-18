@@ -240,31 +240,48 @@ footer .copyright p {
     border-bottom: rgb(190, 190, 190) solid;
 }
 
-/* SWIPER */
+/* World */
+.world {
+    background-color: var(--bg);
+    padding-bottom: 2rem;
+}
+.world p {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 2rem;
+  color: whitesmoke;
+}
 .swiper {
-      width: 100%;
-      height: 100%;
-      --swiper-navigation-color: #ffffff !important;
-    }
-
-.swiper-slide {
-      text-align: start;
-      font-size: 22px;
-      font-weight: bold;
-      padding-top: 0.2rem;
-      color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
+      --swiper-navigation-color: whitesmoke !important;
+    } 
 .swiper-slide img {
       display: block;
       width: 100%;
-      height: 500px;
+      height: 600px;
       object-fit: cover;
-      filter: brightness(150%);
+      filter: brightness(125%);
+      cursor: grab;
     }
+.swiper-slide .linkTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+.swiper-slide .linkTitle a {
+    padding: 1rem 2rem;
+    color: whitesmoke;
+}
+.swiper-slide .linkTitle a:hover {
+    background-color: var(--bg);
+    color: whitesmoke;
+}
+.swiper-slide p {
+   
+    font-size: 80px;
+    font-weight: bold;
+    padding: 2rem;
+}    
 
 @media screen and (max-width: 768px) {
     header .logo {
@@ -380,6 +397,25 @@ footer .copyright p {
     width: 100%;
 }
 
+/* World Swiper */
+.world p {
+  font-size: 20px;
+  padding: 1rem;
+}
+.swiper-slide img {
+    height: 320px;
+}
+.swiper-slide .linkTitle {
+    padding-right: 0;
+}
+.swiper-slide p {
+    font-size: 26px;
+    padding: 0.4rem 1rem;
+}    
+.swiper-slide .linkTitle a {
+    padding: 1rem;
+}
+
 
 /* Black Text */
 .blackText {
@@ -403,10 +439,5 @@ footer .copyright p {
 .whiteBlack h3 {
     font-size: 20px;
 }
-
-/* SWIPER */
-.swiper-slide img {
-      height: 280px;
-    }
 
 }
