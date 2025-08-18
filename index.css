@@ -7,6 +7,7 @@
     --primary-color: #ff8e38;
     --link-color: #fb1b1b;
     --text-color: rgb(194, 194, 194);
+    --bg: rgb(27, 32, 34);
 }
 
 * {
@@ -119,8 +120,6 @@ footer .copyright p {
     font-size: 10px;
 }
 
-
-
 /* Value Banner Blue*/
 .valueBanner {
     background-color: rgb(27, 32, 34);
@@ -130,8 +129,7 @@ footer .copyright p {
     margin: 3rem 2rem 7rem 1rem;
 }
 .valueBanner article {
-    padding: 2rem;
-    
+    padding: 2rem;   
 }
 .valueBanner article h2 {
     font-size: 40px;
@@ -139,7 +137,6 @@ footer .copyright p {
 .valueBanner article h3 {
     font-size: 38px;
 }
-
 
 /* Link Banner */
 .linkBanner {
@@ -185,6 +182,9 @@ footer .copyright p {
 .linkBanner article a:hover {
     color: black;
     border-bottom: black solid;
+}
+.linkBanner nav a {
+    display: none;
 }
 
 /* Jewelry Video */
@@ -313,6 +313,9 @@ footer .copyright p {
     margin: 3rem 0;
     width: 100%;
 }
+.valueBanner article {
+    padding: 1rem;
+}
 .valueBanner article h2 {
     font-size: 20px;
 }
@@ -353,6 +356,16 @@ footer .copyright p {
     margin: 1rem 1rem;
     font-size: 30px;
 }
+.linkBanner nav a {
+    display: block;
+    position: absolute;
+    padding: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    color: whitesmoke;
+    z-index: 40;
+    background-color: var(--bg);
+}
 
 /* Jewelry Video */
 .jewelryVideo {
@@ -381,6 +394,9 @@ footer .copyright p {
 }
 
 /* Wite Text */
+.whiteBlack {
+    padding: 1rem;
+}
 .whiteBlack h2 {
     font-size: 22px;
 }
