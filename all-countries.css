@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #ff8009;
+    --text-color: rgb(194, 194, 194);
+    --bg: rgb(27, 32, 34);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poiret One',sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+header {
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+.swiper {
+    --swiper-navigation-color: #ffffff !important;
+    z-index: 40;
+}
+.mySwiper {
+    height: 100vh;
+    width: 100%;
+}
+.mySwiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper img .imgInner p {
+    color: white;
+    font-size: 160px;
+    z-index: 50;
+}
+header article {
+    position: absolute;
+    height: fit-content;
+    left: 2rem;
+    bottom: 2rem;
+    width: 50%;
+    z-index: 40;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 768px)  {
+    header article {
+        width: 90%;
+        left: 1rem;     
+    }
+}

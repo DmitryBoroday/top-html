@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Весь мир</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel='icon' type='image/png' href='./favicon.png'>
-    <link rel='stylesheet' href='/routs.css'>
+    <link rel='stylesheet' href='/all-countries.css'>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <meta name="robots" content="index follow">
      <!-- Open Graph Meta Tags -->
@@ -25,51 +27,157 @@
 </head>
 <body>
     <header>
-        <video  
-             loop 
-             autoPlay 
-             muted 
-             playsInline 
-             preload='auto' 
-             width='100%' 
-             height='100%'
-             poster='../assets/videos/locPoster.avif'>
-            <source 
-             src='../assets/videos/locDesk.mp4' 
-             type='video/mp4' 
-             media='(max-width:480px)'
-             >
-            </source>
-            <source src='../assets/videos/locDesk.mp4' type='video/mp4'>
-            </source>
-        </video>
+            <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                        media='(min-width: 768px)'
+                        srcSet='/assets/images/hero/toursDesk.avif'
+                    />
+                    <img
+                        title=''
+                        src='/assets/images/hero/toursAva.avif'
+                        alt=''
+                        width={400}
+                        height={400}
+                        loading='eager'
+                        fetchPriority='high'
+                    />
+                    <div class='imgInner'>
+                        <p>АФРИКА</p>
+                    </div>
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                    <source
+                        media='(min-width: 768px)'
+                        srcSet='/assets/images/hero/toursDesk.avif'
+                    />
+                    <img
+                        title=''
+                        src='/assets/images/hero/toursAva.avif'
+                        alt=''
+                        width={400}
+                        height={400}
+                        loading='eager'
+                        fetchPriority='high'
+                    />
+                    </picture>
+                     <div class='imgInner'>
+                        <p>АФРИКА</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                    <source
+                        media='(min-width: 768px)'
+                        srcSet='/assets/images/hero/toursDesk.avif'
+                    />
+                    <img
+                        title=''
+                        src='/assets/images/hero/toursAva.avif'
+                        alt=''
+                        width={400}
+                        height={400}
+                        loading='eager'
+                        fetchPriority='high'
+                    />
+                    </picture>
+                     <div class='imgInner'>
+                        <p>АФРИКА</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                    <source
+                        media='(min-width: 768px)'
+                        srcSet='/assets/images/hero/toursDesk.avif'
+                    />
+                    <img
+                        title=''
+                        src='/assets/images/hero/toursAva.avif'
+                        alt=''
+                        width={400}
+                        height={400}
+                        loading='eager'
+                        fetchPriority='high'
+                    />
+                    </picture>
+                     <div class='imgInner'>
+                        <p>АФРИКА</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                    <source
+                        media='(min-width: 768px)'
+                        srcSet='/assets/images/hero/toursDesk.avif'
+                    />
+                    <img
+                        title=''
+                        src='/assets/images/hero/toursAva.avif'
+                        alt=''
+                        width={400}
+                        height={400}
+                        loading='eager'
+                        fetchPriority='high'
+                    />
+                    </picture>
+                     <div class='imgInner'>
+                        <p>АФРИКА</p>
+                    </div>
+                </div>
+            </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+        </div>
+           <!-- SEO Titles -->
         <article>
-            <div class='bg'></div>
-            <picture>
-               <source
-                media='(min-width: 768px)'
-                srcSet='/assets/images/hero/locDesk.avif'
-               />
-               <img
-                title=''
-                src='/assets/images/hero/locMob.avif'
-                alt=''
-                width={400}
-                height={900}
-                loading='eager'
-                fetchPriority='high'
-                />
-            </picture>
-            <div class='articleContent'>
-             <h1>Эскорт Вакансии По Странам</h1>
-             <h2>
+            <h1>Эскорт Вакансии По Странам</h1>
+            <h2>
                 Сопровождение клиентов на светских раутах, развлечения,
                 эксклюзивные вечеринки на яхте в Сен-Тропе, роскошные выходные в
-                 Милане, Париже или Лондоне - все это ты сможешь получить, работая
-             с одним из наших эскорт агентств
+                Милане, Париже или Лондоне - все это ты сможешь получить, работая
+                с одним из наших эскорт-агентств
             </h2>
-            </div>
         </article>
+        <!-- <a href='/'><span>top</span>escort</a>
+        <div class='menu'>
+          <span class="material-symbols-outlined">
+             segment
+         </span>
+        </div> -->
+      
+        <!-- <p onclick='window.scrollTo({top: 900, behavior: "smooth"});'  class='down'>
+            <span class="material-symbols-outlined">
+              arrow_downward
+            </span>
+        </p> -->
     </header>
+     <main>
+
+     </main>
 </body>
+
+<!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        let swiper = new Swiper('.mySwiper', {
+            loop: true,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: true,
+            },
+        });
+    </script>
 </html>
