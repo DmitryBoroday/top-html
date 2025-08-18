@@ -21,50 +21,85 @@ body {
     font-family: 'Poiret One',sans-serif;
     scroll-behavior: smooth;
     user-select: none;
+    background-color: black;
 }
 
-header {
-   width: 100%;
-   height: 100%;
-   position: relative;
+header a {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+    z-index: 50;
+    font-weight: bold;
+    font-size: 30px;
 }
+header a span {
+    background-color: #f88d28;
+    padding-left: 0.2rem;
+    color: black;
+}
+header article {
+    padding: 6rem 0 2rem  1rem;
+    height: fit-content;
+    width: 50%;
+    color: whitesmoke;
+}
+header article h1 {
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+header article h2 {
+    font-size: 30px;
+}
+
+/* Swiper */
 .swiper {
     --swiper-navigation-color: #ffffff !important;
-    z-index: 40;
 }
 .mySwiper {
-    height: 100vh;
-    width: 100%;
+    height: 100%;
+    width: 80%;
+    text-align: center;
 }
 .mySwiper img {
     width: 100%;
-    height: 100%;
+    height: 600px;
     object-fit: cover;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+.mySwiper a {
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: solid whitesmoke;
 }
 
-.mySwiper img .imgInner p {
-    color: white;
-    font-size: 160px;
-    z-index: 50;
-}
-header article {
-    position: absolute;
-    height: fit-content;
-    left: 2rem;
-    bottom: 2rem;
-    width: 50%;
-    z-index: 40;
-    color: whitesmoke;
-}
+
 
 @media screen and (max-width: 768px)  {
     header article {
         width: 90%;
         left: 1rem;     
+    }
+    header article h1 {
+        font-size: 30px;
+        margin-bottom: 0.5rem;
+    }
+    header article h2 {
+        font-size: 20px;
+    }
+    .mySwiper {
+        height: 100%;
+        width: 100%;
+    }
+    .mySwiper img {
+        width: 100%;
+        height: 400px;
     }
 }
