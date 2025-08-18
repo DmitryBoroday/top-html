@@ -32,6 +32,7 @@ header .menu {
     color: white;
     z-index: 50;
 }
+
 header a {
     position: absolute;
     top: 1rem;
@@ -97,6 +98,57 @@ nav ul a:hover {
     color: white;
 }
 
+/* h3 SEO */
+section {
+    background-color: black;
+    color: white;
+    padding: 6rem;
+    text-align: end;
+    font-size: 50px;
+}
+section a {
+    color: white;
+    border-bottom: 1px solid white;
+    margin-left: 1rem;
+}
+section a:hover {
+    color: rgb(194, 194, 194);
+    border-color: rgb(194, 194, 194);
+}
+
+/* Footer */
+footer {
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer span {
+    font-weight: bold;
+}
+footer p {
+    font-weight: bold;
+    font-size: 10px;
+}
+footer nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    width: 100%;
+}
+footer nav a {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    padding: 1rem 1rem;
+}
+footer nav a:hover {
+    background-color: black;
+    color: white;
+}
+
 @media screen and (max-width: 768px) {
     header video {
         object-fit: cover;
@@ -139,4 +191,29 @@ nav ul a:hover {
         color: white;
     }
 
+    /* h3 section */
+    section {
+        padding: 1rem;
+        text-align: end;
+        font-size: 20px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 1rem 0.5rem;
+      flex-direction: column-reverse;
+      gap: 0;
+    }
+    footer nav {
+        gap: 0;
+    }
+    footer nav a {
+        padding: 1rem 0;
+    }
+    footer .copyright {
+        margin-top: 1rem;
+        padding-top: 0.4rem;
+        border-top: 1px solid black;
+        text-align: center;
+    }
 }
