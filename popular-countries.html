@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Популярные страны</title>
+    <title>Популярные страны для эскорта</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel='icon' type='image/png' href='./favicon.png'>
-    <link rel='stylesheet' href='/routs.css'>
+    <link rel='stylesheet' href='/popular.css'>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <meta name="robots" content="index follow">
      <!-- Open Graph Meta Tags -->
@@ -24,19 +24,29 @@
     <meta name='theme-color' content='#000000'>
 </head>
 <body>
-    <!-- <header>
-        <span></span>
-    </header> -->
-    <!-- <h1>Популярные страны для эскорта</h1>
-    <h2>
-        Сопровождение клиентов на светских раутах, развлечения,
-        эксклюзивные вечеринки на яхте в Сен-Тропе, роскошные выходные в
-        Милане, Париже или Лондоне - все это ты сможешь получить, работая
-        с одним из наших эскорт-агентств
-    </h2> -->
-    <div class='videoBg'>
-      <div class='videoFilter'></div>
-      <video 
+    <header>
+        <div class='video-bg'></div>
+       <a href='/'><span>top</span>escort</a>
+       <div class='menu'>
+          <span class="material-symbols-outlined">
+             segment
+         </span>
+        </div>
+       <article>
+         <h1>Популярные страны для эскорта</h1>
+         <h2>
+            Сопровождение клиентов на светских раутах, развлечения,
+            эксклюзивные вечеринки на яхте в Сен-Тропе, роскошные выходные в
+            Милане, Париже или Лондоне - все это ты сможешь получить, работая
+            с одним из наших эскорт-агентств
+         </h2>
+       </article>
+        <p onclick='window.scrollTo({top: 900, behavior: "smooth"});'  class='down'>
+            <span class="material-symbols-outlined">
+              arrow_downward
+            </span>
+        </p>
+        <video 
              loop 
              autoPlay 
              muted 
@@ -44,10 +54,33 @@
              preload='auto' 
              width='100%' 
              height='100%'
-             poster='../assets/videos/boatPoster.avif'>
-            <source src='../assets/videos/popDesk.mp4' type='video/mp4'>
+             poster='../assets/videos/popPoster.avif'>
+            <source src='../assets/videos/popDesk.mp4' type='video/mp4' media='(max-width:480px)'>
             </source>
+            <source src='../assets/videos/popDesk.mp4' type='video/mp4'>
       </video>
-    </div>
+    </header>
+   
+    <main>
+        <!-- Countries Section -->
+      <nav>
+          <ul>
+            <a href=''>CHINA</a>
+            <a href=''>RUSSIA</a>
+            <a href=''>TURKEY</a>
+            <a href=''>ISRAEL</a>
+            <a href=''>ARMENIA</a>
+            <a href=''>GREECE</a>
+            <a href=''>GERMANY</a>
+            <a href=''>UAE</a>
+            <a href=''>FRANCE</a>
+            <a href=''>ITALY</a>
+          </ul>
+      </nav>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
