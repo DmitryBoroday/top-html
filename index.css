@@ -105,9 +105,8 @@ header .menu {
 /* Footer */
 
 footer {
-    background-color: rgb(27, 32, 34);
+    background-color: black;
     padding: 4rem 1rem 1rem 1rem;
-    
 }
 footer ul {
     display: flex;
@@ -272,10 +271,10 @@ footer .copyright p {
       --swiper-navigation-color: whitesmoke !important;
     } 
 .swiper-button-next {
-    padding: 1rem 0 1rem 1rem;
+    padding: 2rem 0 2rem 2rem;
 }
 .swiper-button-prev {
-    padding: 1rem 1rem 1rem 0;
+    padding: 2rem 2rem 2rem 0;
 }
 .swiper-slide img {
       display: block;
@@ -428,7 +427,7 @@ footer .copyright p {
     right: 1rem;
     color: whitesmoke;
     z-index: 40;
-    background-color: var(--bg);
+    background-color: rgb(21, 22, 23);
 }
 
 /* Jewelry Video */
