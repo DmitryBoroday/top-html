@@ -27,6 +27,21 @@ body {
     user-select: none;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Header */
 header {
     position: relative;
@@ -180,8 +195,8 @@ footer .copyright p {
   margin-top: 2rem;
 }
 .linkBanner article a:hover {
-    color: black;
-    border-bottom: black solid;
+    color: rgb(96, 96, 96);
+    border-bottom: rgb(96, 96, 96) solid;
 }
 .linkBanner nav a {
     display: none;
@@ -256,6 +271,12 @@ footer .copyright p {
 .swiper {
       --swiper-navigation-color: whitesmoke !important;
     } 
+.swiper-button-next {
+    padding: 1rem 0 1rem 1rem;
+}
+.swiper-button-prev {
+    padding: 1rem 1rem 1rem 0;
+}
 .swiper-slide img {
       display: block;
       width: 100%;
@@ -280,18 +301,18 @@ footer .copyright p {
 .tours a {
     font-size: 100px;
     font-weight: bold;
-    color: whitesmoke;
+    color: white;
     padding: 1rem;
     z-index: 40;
 }
 .tours a:hover {
-    color: rgb(156, 156, 156);
+    color: rgb(177, 177, 177);
 }
 .tours span:hover {
     background-color: var(--primary-color);
 }
 .tours a span {
-    background-color: rgb(202, 202, 202);
+    background-color: white;
     color: black;
     padding: 1rem;
     margin-left: 1rem;
