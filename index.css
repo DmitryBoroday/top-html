@@ -240,16 +240,18 @@ footer .copyright p {
     border-bottom: rgb(190, 190, 190) solid;
 }
 
-/* World */
+/* World Swiper*/
 .world {
-    background-color: var(--bg);
-    padding-bottom: 2rem;
+    background-color: black;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
 }
 .world p {
   font-size: 30px;
   font-weight: bold;
   padding: 2rem;
   color: whitesmoke;
+  text-align: center;
 }
 .swiper {
       --swiper-navigation-color: whitesmoke !important;
@@ -260,28 +262,24 @@ footer .copyright p {
       height: 600px;
       object-fit: cover;
       filter: brightness(125%);
-      cursor: grab;
     }
-.swiper-slide .linkTitle {
+
+/* Tours     */
+.tours {
+    background-color: black;
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 1rem;
+    color: white;
 }
-.swiper-slide .linkTitle a {
-    padding: 1rem 2rem;
+.tours video {
+    height: 700px;
+}
+
+.tours a {
+    font-size: 50px;
     color: whitesmoke;
 }
-.swiper-slide .linkTitle a:hover {
-    background-color: var(--bg);
-    color: whitesmoke;
-}
-.swiper-slide p {
-   
-    font-size: 80px;
-    font-weight: bold;
-    padding: 2rem;
-}    
 
 @media screen and (max-width: 768px) {
     header .logo {
@@ -438,6 +436,11 @@ footer .copyright p {
 }
 .whiteBlack h3 {
     font-size: 20px;
+}
+
+/* Tours     */
+.tours {
+    flex-direction: column;
 }
 
 }

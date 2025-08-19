@@ -24,8 +24,6 @@
     <link rel='canonical' href='https://www.topescort.pro/' />
     <link rel='apple-touch-icon' href='/apple-touch-icon.png'>
     <meta name='theme-color' content='#000000'>
-    <!-- Tailwind -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <!-- Swiper JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -233,10 +231,10 @@
 
          <!-- All Countries Swiper -->
           <section class='world'>
-            <p>весь мир</p>
+            <p>ВЕСЬ МИР</p>
            <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <a href='' class="swiper-slide">
                   <picture>
                     <source
                         media='(min-width: 768px)'
@@ -252,16 +250,8 @@
                         fetchPriority='high'
                     />
                     </picture>
-                    <div class='linkTitle'>
-                       <p href=''>АФРИКА</p>
-                       <a href=''>
-                        <span class="material-symbols-outlined">
-                        arrow_forward_ios
-                        </span>
-                       </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
+                </a>
+                <a href='' class="swiper-slide">
                     <picture>
                     <source
                         media='(min-width: 768px)'
@@ -277,16 +267,8 @@
                         fetchPriority='high'
                     />
                     </picture>
-                     <div class='linkTitle'>
-                       <p href=''>АФРИКА</p>
-                       <a href=''>
-                        <span class="material-symbols-outlined">
-                        arrow_forward_ios
-                        </span>
-                       </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
+                </a>
+                <a href='' class="swiper-slide">
                     <picture>
                     <source
                         media='(min-width: 768px)'
@@ -302,16 +284,8 @@
                         fetchPriority='high'
                     />
                     </picture>
-                      <div class='linkTitle'>
-                       <p href=''>АФРИКА</p>
-                       <a href=''>
-                        <span class="material-symbols-outlined">
-                        arrow_forward_ios
-                        </span>
-                       </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
+                </a>
+                <a href='' class="swiper-slide">
                     <picture>
                     <source
                         media='(min-width: 768px)'
@@ -327,16 +301,8 @@
                         fetchPriority='high'
                     />
                     </picture>
-                     <div class='linkTitle'>
-                       <p href=''>АФРИКА</p>
-                       <a href=''>
-                        <span class="material-symbols-outlined">
-                        arrow_forward_ios
-                        </span>
-                       </a>
-                    </div>
-                </div>
-                <div class="swiper-slide">
+                </a>
+                <a href='' class="swiper-slide">
                     <picture>
                     <source
                         media='(min-width: 768px)'
@@ -352,22 +318,13 @@
                         fetchPriority='high'
                     />
                     </picture>
-                     <div class='linkTitle'>
-                       <p href=''>АФРИКА</p>
-                       <a href=''>
-                        <span class="material-symbols-outlined">
-                        arrow_forward_ios
-                        </span>
-                       </a>
-                    </div>
-                </div>
+                </a>
             </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
           </section>
         
-
            <!-- Indepth Authority Black Text -->
           <section class='blackText'>
              <article>
@@ -376,39 +333,25 @@
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, id magni. Obcaecati error labore quibusdam corrupti aperiam et corporis officia in, nihil rem dolor ea fugiat earum, facere minima nam, porro repellendus reiciendis saepe voluptatibus eum eligendi. Odit, pariatur alias!</h3>
              </article>
           </section>
-       
 
-           <!-- Best Tours -->
-         <section class='linkBanner'>
-            <p>прибыльные туры</p>
-            <div class='bg'></div>
-            <picture>
-                <source
-                    media='(min-width: 768px)'
-                    srcSet='/assets/images/hero/toursDesk.avif'
-                />
-                <img
-                    title=''
-                    src='/assets/images/hero/toursAva.avif'
-                    alt=''
-                    width={400}
-                    height={400}
-                    loading='eager'
-                    fetchPriority='high'
-                />
-            </picture>
-            <article>
-                <h2>ЛУЧШИЕ<br />НАПРАВЛЕНИЯ<br /> ДЛЯ ПРИБЫЛЬНЫХ <br />ЭСКОРТ ТУРОВ</h2>
-                <a href='sex-tours.html'>press here</a>
-            </article>
-            <nav><a href='/hot-deals.html'><span class="material-symbols-outlined">
-            arrow_forward_ios
-            </span></a></nav>
-         </section>
-
-          <!-- Our Blog -->
-         <section class='linkBanner'>
-            <p>наш блог</p>
+          <!-- Tours Blog Video Link -->
+         <section class='tours'>
+            <a href='/sex-tours.html' class='toursLink'>У НАС МНОГО ПРИБЫЛЬНЫХ СЕКС ТУРОВ</a>
+             <video 
+             loop 
+             autoPlay 
+             muted 
+             playsInline 
+             preload='auto' 
+             width='100%' 
+             height='100%'
+             poster='../assets/videos/blogPoster.avif'>
+            <source src='../assets/videos/blogOneMob.mp4' type='video/mp4' media='(max-width:480px)'>
+            </source>
+            <source src='../assets/videos/toursDesk.mp4' type='video/mp4'>
+            </source>
+            </video>
+            <a href='/blog.html' class='blogLink'>СТАТЬИ НА ТЕМУ ЭСКОРТА</a>
          </section>
          
     </main>
@@ -440,7 +383,7 @@
     <!-- Initialize Swiper -->
     <script>
         let swiper = new Swiper('.mySwiper', {
-            loop: true,
+            // loop: true,
             navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -448,12 +391,12 @@
             breakpoints: {
                 320: {
                     spaceBetween: 10,
-                    slidesPerView: 1.2,
+                    slidesPerView: 1,
                     centeredSlides: false
                 },
                 768: {
                     spaceBetween: 20,
-                    slidesPerView: 1.5,
+                    slidesPerView: 2,
                     centeredSlides: false,
                 },
             },
