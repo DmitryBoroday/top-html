@@ -251,49 +251,62 @@
 
 
     <div id='content'>
-        <img id='image' src=''/>
+        <img id='img'/>
     </div>
-
 
     <!-- Script -->
      <script>
-        const projectId = '2rmudr1y'; // Replace with your Sanity Project ID
-        const dataset = 'production'; // Replace with your Sanity Dataset name
-        const groqQuery = encodeURIComponent('*[_type == "topOffers"]{_id,_createdAt,slug,topAgencyName, countryTitle,mobileImage,desktopImage,flagImage}'); // GROQ query to fetch posts with title and body
+        const projectId = '2rmudr1y' 
+        const dataset = 'production' 
+        const groqQuery = encodeURIComponent(
+        '*[_type == "topOffers"]{_id,_createdAt,slug,topAgencyName, countryTitle,mobileImage {asset -> {url}},desktopImage{asset -> {url}},flagImage{asset -> {url}}}'
+        ) 
+        const URL = `https://${projectId}.api.sanity.io/v1/data/query/${dataset}?query=${groqQuery}`
 
-        const apiUrl = `https://${projectId}.api.sanity.io/v1/data/query/${dataset}?query=${groqQuery}`;
-
-        // const hotAgencies = document.getElementById('content')
-
-        // fetch(apiUrl)
-        // .then(response => response.json())
-        // .then(responseJson => console.log(responseJson))
-     
-
-        fetch(apiUrl)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
+        fetch(URL) //Fetch Endpoint GET HTTP METHOD
+        .then((response) => {
+            if(!response.ok){
+                throw new Error(`HTTP error! status: ${response.status}`)
+            }
+            console.log(response)
+            return response.json()
+        }) //Parse to JSON
+        .then((data) => {
+            let agencies = document.getElementById('content')
+            data.result.map(agency => {
+                let item = document.createElement('li')
+                item.innerHTML = `${agency.topAgencyName}`
+                agencies.appendChild(item)
             })
-            .then(data => {
-                const hotAgency = document.getElementById('content');
-                if (data.result && data.result.length > 0) {
-                    let htmlContent = '<ul>';
-                    data.result.forEach(agency => {
-                        htmlContent += `<li><h3>${agency.topAgencyName}</h3><p>${agency.countryTitle}</p></li>`;
-                    });
-                    htmlContent += '</ul>';
-                    hotAgency.innerHTML = htmlContent;
-                } else {
-                    hotAgency.innerHTML = '<p>No posts found.</p>'
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-                document.getElementById('content').innerHTML = `<p>Error loading content: ${error.message}</p>`
-            })
+        })
+
+        // fetch(URL)
+        // .then((response) => {
+        //     if (!response.ok) {
+        //     throw new Error(`HTTP error! status: ${response.status}`)
+        //     }
+        //     console.log(response)
+        //     return response.json()
+        // })
+        // .then((data) => {
+        //     const hotAgency = document.getElementById('content')
+        //     if (data.result && data.result.length > 0) {
+        //     let htmlContent = '<ul>'
+        //     data.result.forEach((agency) => {
+        //         htmlContent += `<li><img>${agency.mobileImage.asset.url}</img><h3>${agency.topAgencyName}</h3><p>${agency.countryTitle}</p></li>`
+        //     })
+        //     htmlContent += '</ul>'
+        //     hotAgency.innerHTML = htmlContent
+        //     } else {
+        //     htmlContent = '<p>No posts found.</p>'
+        //     }
+        // })
+        // .catch((error) => {
+        //     console.error('Error fetching data:', error)
+        //     document.getElementById(
+        //     'content'
+        //     ).innerHTML = `<p>Error loading content: ${error.message}</p>`
+        // })
     </script>
 </body>
 </html>
