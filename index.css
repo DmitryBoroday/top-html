@@ -194,8 +194,8 @@ footer .copyright p {
   margin-top: 2rem;
 }
 .linkBanner article a:hover {
-    color: rgb(96, 96, 96);
-    border-bottom: rgb(96, 96, 96) solid;
+    color: rgb(48, 48, 48);
+    border-bottom: rgb(48, 48, 48) solid;
 }
 .linkBanner nav a {
     display: none;
@@ -284,7 +284,7 @@ footer .copyright p {
       filter: brightness(125%);
     }
 
-/* Tours     */
+/* Tours Blog Video Link  */
 .tours {
     position: relative;
     background-color: black;
@@ -292,6 +292,7 @@ footer .copyright p {
     height: 100%;
     display: flex;
     color: white;
+    margin-bottom: 4rem;
 }
 .tours video {
     height: 700px;
@@ -395,8 +396,9 @@ footer .copyright p {
 .linkBanner .bg {
     position: absolute;
     inset: 0;
+    margin-bottom: 2px;
     z-index: 30;
-    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 20%);
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0) 20%);
 }
 .linkBanner img {
     height: 400px;

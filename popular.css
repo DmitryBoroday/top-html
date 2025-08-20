@@ -50,7 +50,7 @@ header a span {
 header p {
     position: absolute;
     bottom: 4rem;
-    left: 4rem;
+    right: 4rem;
     z-index: 50;
     color: rgb(191, 190, 190);
     background-color: rgb(60, 60, 60);
@@ -162,7 +162,10 @@ footer nav a:hover {
     header article {
         left: 1rem;      
     }
-
+    header p {
+        bottom: 4rem;
+        right: 2rem;
+    }
     header article h1 {
         font-size: 30px;
         width: 80%;

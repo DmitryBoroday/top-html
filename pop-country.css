@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #ff8009;
+    --text-color: rgb(194, 194, 194);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poiret One',sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+

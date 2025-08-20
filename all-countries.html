@@ -27,10 +27,9 @@
 </head>
 <body>
     <header>
-        <a href='/'><span>top</span>escort</a>
         <div class='menu'>
           <span class="material-symbols-outlined">
-             segment
+              horizontal_rule
          </span>
         </div>
         <article>
@@ -42,24 +41,14 @@
                 с одним из наших эскорт-агентств
             </h2>
         </article>
-        <!-- <a href='/'><span>top</span>escort</a>
-        <div class='menu'>
-          <span class="material-symbols-outlined">
-             segment
-         </span>
-        </div> -->
-      
-        <!-- <p onclick='window.scrollTo({top: 900, behavior: "smooth"});'  class='down'>
-            <span class="material-symbols-outlined">
-              arrow_downward
-            </span>
-        </p> -->
+        <p><a href='/'>topescort</a></p>
     </header>
      <main>
-             <!-- Swiper -->
-        <div class="swiper mySwiper">
+         <!-- All Countries Swiper -->
+          <section class='world'>
+           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <a href='' class="swiper-slide">
                   <picture>
                     <source
                         media='(min-width: 768px)'
@@ -75,9 +64,8 @@
                         fetchPriority='high'
                     />
                     </picture>
-                    <a href=''>АФРИКА</a>
-                </div>
-                <div class="swiper-slide">
+                </a>
+                <a href='' class="swiper-slide">
                     <picture>
                     <source
                         media='(min-width: 768px)'
@@ -93,9 +81,8 @@
                         fetchPriority='high'
                     />
                     </picture>
-                    <a href=''>АФРИКА</a>
-                </div>
-                <div class="swiper-slide">
+                </a>
+                <a href='' class="swiper-slide">
                     <picture>
                     <source
                         media='(min-width: 768px)'
@@ -111,9 +98,8 @@
                         fetchPriority='high'
                     />
                     </picture>
-                     <a href=''>АФРИКА</a>
-                </div>
-                <div class="swiper-slide">
+                </a>
+                <a href='' class="swiper-slide">
                     <picture>
                     <source
                         media='(min-width: 768px)'
@@ -129,9 +115,8 @@
                         fetchPriority='high'
                     />
                     </picture>
-                     <a href=''>АФРИКА</a>
-                </div>
-                <div class="swiper-slide">
+                </a>
+                <a href='' class="swiper-slide">
                     <picture>
                     <source
                         media='(min-width: 768px)'
@@ -147,13 +132,37 @@
                         fetchPriority='high'
                     />
                     </picture>
-                     <a href=''>АФРИКА</a>
-                </div>
+                </a>
             </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-        </div>
+            </div>
+          </section>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis amet iure delectus veritatis libero! Sit, corrupti fugit! Qui asperiores, maxime veritatis distinctio optio obcaecati, sint architecto, nemo eligendi praesentium animi. Rem sit voluptatem architecto nesciunt repellendus obcaecati. Ipsa quos aspernatur, sequi repellendus officia dicta non nemo nisi vel in reiciendis voluptas hic rerum nam! Illo, inventore et molestias recusandae omnis voluptates in, nobis deserunt commodi ducimus exercitationem veritatis, dolorem ipsum mollitia aliquid beatae sint minus numquam debitis? Iste, fugiat similique sed necessitatibus unde laudantium aut ullam dolorem inventore labore ad eveniet et perspiciatis culpa sit aspernatur rem facere quaerat sunt!
+          </h3>
      </main>
+
+      <footer>
+       <div class='copyright'>
+        <span>@topescort 2025</span>
+        <p>No intimate services</p>
+      </div>
+      <nav>
+        <a href='/hot-deals.html'>
+          <span class="material-symbols-outlined">
+          arrow_back_ios
+          </span>
+           горячие вакансии
+        </a>
+         <a href='sex-tours.html'>
+            прибыльные туры
+            <span class="material-symbols-outlined">
+                arrow_forward_ios
+            </span>
+          </a>
+      </nav>
+    </footer>
 </body>
 
 <!-- Swiper JS -->
@@ -162,12 +171,23 @@
     <!-- Initialize Swiper -->
     <script>
         let swiper = new Swiper('.mySwiper', {
-            loop: true,
+            loop: false,
             navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
             },
-            centeredSlides: true,
+            breakpoints: {
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    spaceBetween: 16,
+                    slidesPerView: 2,
+                },
+             
+            },
+            centeredSlides: false,
             autoplay: {
                 delay: 4000,
                 disableOnInteraction: true,

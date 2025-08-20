@@ -39,7 +39,6 @@
 
     <!-- Grid Cards -->
     <section class='grid'>
-        
        <a href='/sex-tour-agency.html' class='gridInner'>
             <img
                 title=''
@@ -239,7 +238,6 @@
           </div>
           <p>Tour Agency Name</p>
        </a>
-
     </section>
 
     <!-- Seo h3 -->
@@ -250,5 +248,52 @@
     <footer>
         footer here some links related to this route
     </footer>
+
+
+    <div id='content'>
+        <img id='image' src=''/>
+    </div>
+
+
+    <!-- Script -->
+     <script>
+        const projectId = '2rmudr1y'; // Replace with your Sanity Project ID
+        const dataset = 'production'; // Replace with your Sanity Dataset name
+        const groqQuery = encodeURIComponent('*[_type == "topOffers"]{_id,_createdAt,slug,topAgencyName, countryTitle,mobileImage,desktopImage,flagImage}'); // GROQ query to fetch posts with title and body
+
+        const apiUrl = `https://${projectId}.api.sanity.io/v1/data/query/${dataset}?query=${groqQuery}`;
+
+        // const hotAgencies = document.getElementById('content')
+
+        // fetch(apiUrl)
+        // .then(response => response.json())
+        // .then(responseJson => console.log(responseJson))
+     
+
+        fetch(apiUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                const hotAgency = document.getElementById('content');
+                if (data.result && data.result.length > 0) {
+                    let htmlContent = '<ul>';
+                    data.result.forEach(agency => {
+                        htmlContent += `<li><h3>${agency.topAgencyName}</h3><p>${agency.countryTitle}</p></li>`;
+                    });
+                    htmlContent += '</ul>';
+                    hotAgency.innerHTML = htmlContent;
+                } else {
+                    hotAgency.innerHTML = '<p>No posts found.</p>'
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+                document.getElementById('content').innerHTML = `<p>Error loading content: ${error.message}</p>`
+            })
+    </script>
 </body>
 </html>
